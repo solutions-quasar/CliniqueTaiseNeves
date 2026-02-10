@@ -19,7 +19,6 @@ const CONFIG = {
         fr: {
             nav: [
                 { label: "Accueil", anchor: "#hero" },
-                { label: "Galerie", anchor: "#gallery" },
                 { label: "Services", anchor: "#services" },
                 { label: "Avis", anchor: "#reviews" },
                 { label: "Pourquoi Nous", anchor: "#why-choose-us" },
@@ -110,7 +109,6 @@ const CONFIG = {
         en: {
             nav: [
                 { label: "Home", anchor: "#hero" },
-                { label: "Gallery", anchor: "#gallery" },
                 { label: "Services", anchor: "#services" },
                 { label: "Reviews", anchor: "#reviews" },
                 { label: "Why Us", anchor: "#why-choose-us" },
@@ -201,7 +199,6 @@ const CONFIG = {
         pt: {
             nav: [
                 { label: "Início", anchor: "#hero" },
-                { label: "Galeria", anchor: "#gallery" },
                 { label: "Serviços", anchor: "#services" },
                 { label: "Avaliações", anchor: "#reviews" },
                 { label: "Por que Nós", anchor: "#why-choose-us" },
