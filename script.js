@@ -7,13 +7,19 @@ const CONFIG = {
         phone: "(418) 261-7237",
         phoneRaw: "+14182617237",
         email: "",
+        email: "cliniquetaiseneves@gmail.com",
         instagram: "https://www.instagram.com/cliniquetaiseneves/?hl=en",
         googleMapsDir: "https://www.google.com/maps/dir/?api=1&destination=205%20Montmagny%20St%2C%20Qu%C3%A9bec%20City%2C%20QC%20G1N%204V3",
+        hours: [
+            { day: "Lundi - Vendredi", time: "9:00 - 19:00" },
+            { day: "Samedi - Dimanche", time: "Fermé" }
+        ]
     },
     translations: {
         fr: {
             nav: [
                 { label: "Accueil", anchor: "#hero" },
+                { label: "Galerie", anchor: "#gallery" },
                 { label: "Services", anchor: "#services" },
                 { label: "Avis", anchor: "#reviews" },
                 { label: "Pourquoi Nous", anchor: "#why-choose-us" },
@@ -40,12 +46,30 @@ const CONFIG = {
                 details: "Détails",
                 specialized: "Soin spécialisé pour votre bien-être et beauté.",
                 items: [
-                    { title: "Massage relaxant", desc: "Une thérapie apaisante conçue pour réduire le stress et favoriser une relaxation profonde." },
-                    { title: "Drainage lymphatique", desc: "Technique douce pour stimuler le système lymphatique et détoxifier le corps." },
-                    { title: "Drainage post-opératoire", desc: "Soins spécialisés pour accélérer la récupération après une chirurgie." },
-                    { title: "Soins esthétiques", desc: "Traitements avancés pour rajeunir votre peau et sublimer votre beauté naturelle." },
-                    { title: "Traitement de l'acné", desc: "Nettoyage en profondeur et thérapies ciblées pour une peau saine." },
-                    { title: "Radiofréquence", desc: "Technologie non invasive pour le raffermissement cutané et le remodelage." }
+                    { title: "Nettoyage en profondeur", desc: "Soin complet pour une peau purifiée et éclatante." },
+                    { title: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement." },
+                    { title: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire." },
+                    { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight) : Peeling au carbone pour un éclat instantané." },
+                    { title: "Épilation Laser", desc: "Technologies Sharplight et LightSheer pour une peau douce durablement." },
+                    { title: "Laser CO2 Fractionné", desc: "Cicatrices, pores dilatés, rides, vergetures et rajeunissement global." },
+                    { title: "Radiofréquence", desc: "Remodelage corporel et facial, cellulite et relâchement cutané (Sharplight et Exilis)." },
+                    { title: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid." },
+                    { title: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections." },
+                    { title: "Soins Pré/Post-Opératoires", desc: "Suivi spécialisé pour chirurgie plastique, bariatrique et post-partum." },
+                    { title: "Massothérapie & Drainage", desc: "Thérapeutique, myofascial, et drainage lymphatique (Renata Franca, Goddoy, Leduc)." }
+                ]
+            },
+            gallery: {
+                title: "Galerie",
+                subtitle: "Un aperçu de notre expertise et de notre environnement."
+            },
+            technologies: {
+                title: "Nos Technologies",
+                desc: "Nous utilisons des équipements médicaux-esthétiques de classe mondiale pour garantir des résultats sûrs et efficaces.",
+                items: [
+                    { title: "BTL Exilis Ultra 360", desc: "La seule technologie combinant radiofréquence et ultrasons pour le raffermissement de la peau et le remodelage corporel.", img: "taise_machines.jpg" },
+                    { title: "Lumenis LightSheer Desire", desc: "La référence absolue en épilation laser. Rapide, efficace et confortable pour tous les types de peau.", img: "machine_lightsheer.jpg" },
+                    { title: "BTL X-Wave", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "machine_btl.jpg" }
                 ]
             },
             reviews: {
@@ -86,6 +110,7 @@ const CONFIG = {
         en: {
             nav: [
                 { label: "Home", anchor: "#hero" },
+                { label: "Gallery", anchor: "#gallery" },
                 { label: "Services", anchor: "#services" },
                 { label: "Reviews", anchor: "#reviews" },
                 { label: "Why Us", anchor: "#why-choose-us" },
@@ -112,12 +137,30 @@ const CONFIG = {
                 details: "Details",
                 specialized: "Specialized care for your well-being and beauty.",
                 items: [
-                    { title: "Relaxing Massage", desc: "A soothing therapy designed to reduce stress and promote deep relaxation." },
-                    { title: "Lymphatic Drainage", desc: "Gentle technique to stimulate the lymphatic system and detoxify the body." },
-                    { title: "Post-Op Drainage", desc: "Specialized care to accelerate recovery after surgery." },
-                    { title: "Aesthetic Care", desc: "Advanced treatments to rejuvenate your skin and enhance natural beauty." },
-                    { title: "Acne Treatment", desc: "Deep cleansing and targeted therapies for healthy skin." },
-                    { title: "Radiofrequency", desc: "Non-invasive technology for skin tightening and body remodeling." }
+                    { title: "Deep Skin Cleansing", desc: "Complete care for purified and radiant skin." },
+                    { title: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation." },
+                    { title: "Q-switched Laser", desc: "Effective and safe tattoo removal." },
+                    { title: "Hollywood Peel", desc: "Q-switched Laser (Sharplight): Carbon peel for instant glow." },
+                    { title: "Laser Hair Removal", desc: "Sharplight and LightSheer technologies for lastingly smooth skin." },
+                    { title: "Fractional CO2 Laser", desc: "Scars, enlarged pores, wrinkles, stretch marks, and global rejuvenation." },
+                    { title: "Radiofrequency", desc: "Body and facial contouring, cellulite, and skin tightening (Sharplight and Exilis)." },
+                    { title: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold." },
+                    { title: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections." },
+                    { title: "Pre/Post-Op Care", desc: "Specialized follow-up for plastic, bariatric, and facial surgery." },
+                    { title: "Massage & Drainage", desc: "Therapeutic, myofascial, and lymphatic drainage (Renata Franca, Goddoy, Leduc)." }
+                ]
+            },
+            gallery: {
+                title: "Gallery",
+                subtitle: "A glimpse of our expertise and environment."
+            },
+            technologies: {
+                title: "Our Technologies",
+                desc: "We use world-class medical-aesthetic equipment to ensure safe and effective results.",
+                items: [
+                    { title: "BTL Exilis Ultra 360", desc: "The only technology combining radiofrequency and ultrasound for skin tightening and body contouring.", img: "taise_machines.jpg" },
+                    { title: "Lumenis LightSheer Desire", desc: "The gold standard in laser hair removal. Fast, effective, and comfortable for all skin types.", img: "machine_lightsheer.jpg" },
+                    { title: "BTL X-Wave", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "machine_btl.jpg" }
                 ]
             },
             reviews: {
@@ -154,10 +197,101 @@ const CONFIG = {
                 error: "Oops! An error occurred.",
                 loading: "Sending..."
             }
+        },
+        pt: {
+            nav: [
+                { label: "Início", anchor: "#hero" },
+                { label: "Galeria", anchor: "#gallery" },
+                { label: "Serviços", anchor: "#services" },
+                { label: "Avaliações", anchor: "#reviews" },
+                { label: "Por que Nós", anchor: "#why-choose-us" },
+                { label: "Sobre", anchor: "#bio" },
+                { label: "Contato", anchor: "#contact" }
+            ],
+            tagline: "Massoterapia, drenagem linfática e tratamentos estéticos na cidade de Quebec.",
+            description: "Uma clínica acolhedora e moderna focada em resultados reais, conforto e atendimento profissional.",
+            cta: "Agendar Consulta",
+            bio: {
+                title: "Proprietária e Terapeuta Certificada",
+                description: "Apaixonada por bem-estar e estética, Taíse Neves combina expertise técnica e abordagem humana para oferecer cuidados personalizados de alta qualidade. Com anos de experiência em massoterapia e drenagem linfática, ela se dedica a ajudar cada cliente a alcançar seus objetivos de saúde e autoconfiança.",
+                stats: [
+                    { label: "Anos de Experiência", value: "10+" },
+                    { label: "Clientes Felizes", value: "5k+" },
+                    { label: "Certificações", value: "12" }
+                ],
+                quote: "Meu compromisso é revelar sua beleza natural através de cuidados atenciosos e expertise de ponta.",
+                expertiseLabel: "A expertise por trás do seu bem-estar",
+                meetLabel: "Conheça Taíse Neves"
+            },
+            services: {
+                title: "Nossos Serviços",
+                details: "Detalhes",
+                specialized: "Cuidado especializado para seu bem-estar e beleza.",
+                items: [
+                    { title: "Limpeza Profunda", desc: "Cuidado completo para uma pele purificada e radiante." },
+                    { title: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento." },
+                    { title: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura." },
+                    { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight): Peeling de carbono para brilho instantâneo." },
+                    { title: "Depilação a Laser", desc: "Tecnologias Sharplight e LightSheer para pele macia duradoura." },
+                    { title: "Laser CO2 Fracionado", desc: "Cicatrizes, poros dilatados, rugas, estrias e rejuvenescimento global." },
+                    { title: "Radiofrequência", desc: "Remodelação corporal e facial, celulite e flacidez (Sharplight e Exilis)." },
+                    { title: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio." },
+                    { title: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições." },
+                    { title: "Cuidados Pré/Pós-Op", desc: "Acompanhamento especializado para cirurgia plástica, bariátrica e facial." },
+                    { title: "Massoterapia & Drenagem", desc: "Terapêutica, miofascial e drenagem linfática (Renata Franca, Goddoy, Leduc)." }
+                ]
+            },
+            gallery: {
+                title: "Galeria",
+                subtitle: "Um vislumbre de nossa expertise e ambiente."
+            },
+            technologies: {
+                title: "Nossas Tecnologias",
+                desc: "Utilizamos equipamentos médico-estéticos de classe mundial para garantir resultados seguros e eficazes.",
+                items: [
+                    { title: "BTL Exilis Ultra 360", desc: "A única tecnologia combinando radiofrequência e ultrassom para firmeza da pele e contorno corporal.", img: "taise_machines.jpg" },
+                    { title: "Lumenis LightSheer Desire", desc: "O padrão ouro em depilação a laser. Rápido, eficaz e confortável para todos os tipos de pele.", img: "machine_lightsheer.jpg" },
+                    { title: "BTL X-Wave", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "machine_btl.jpg" }
+                ]
+            },
+            reviews: {
+                title: "O que dizem nossos clientes",
+                more: "Ver mais avaliações"
+            },
+            why: {
+                title: "Por que Escolher Nossa Clínica",
+                items: [
+                    "Atmosfera acolhedora e moderna",
+                    "Expertise certificada e contínua",
+                    "Atendimento profissional e atencioso",
+                    "Processos e recomendações claros",
+                    "Tecnologia de ponta"
+                ]
+            },
+            contact: {
+                title: "Contate-nos",
+                subtitle: "Entre em contato para confirmar os próximos passos.",
+                name: "Nome Completo",
+                info: "Telefone ou E-mail",
+                type: "Tipo de Tratamento",
+                time: "Horário Preferido",
+                message: "Mensagem (opcional)",
+                send: "Enviar Solicitação",
+                times: ["Manhã", "Tarde", "Noite"],
+                addressLabel: "Endereço",
+                phoneLabel: "Telefone",
+                hoursLabel: "Horários",
+                directions: "Como Chegar",
+                days: ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"],
+                closed: "Fechado",
+                success: "Obrigado! Sua solicitação foi enviada.",
+                error: "Ops! Ocorreu um erro.",
+                loading: "Enviando..."
+            }
         }
     },
     images: {
-        hero: "hero_main.png",
+        hero: "hero_new.jpg",
         services: [
             "service_massage.png",
             "service_drainage.png",
@@ -166,14 +300,25 @@ const CONFIG = {
             "service_acne.png",
             "service_tech.png"
         ],
-        logo: "logo_new.png",
-        bio: "taise_bio.jpg"
+        logo: "logo_top_custom.png",
+        bio: "taise_bio.jpg",
+        footerSignature: "footer_logo_full.png",
+        reviewsBanner: "reviews_full.jpg",
+        machines: ["taise_machines.jpg", "machine_lightsheer.jpg", "machine_btl.jpg"],
+        gallery: [
+            "gallery_01.jpg",
+            "gallery_02.jpg",
+            "gallery_03.jpg",
+            "gallery_04.jpg",
+            "gallery_05.jpg"
+        ]
     },
     reviews: [
         {
             text: {
                 fr: "Service exceptionnel du début à la fin… Chaque visite est un vrai plaisir.",
-                en: "Exceptional service from start to finish… Every visit is a true pleasure."
+                en: "Exceptional service from start to finish… Every visit is a true pleasure.",
+                pt: "Serviço excepcional do início ao fim… Cada visita é um verdadeiro prazer."
             },
             author: "Siandra Cavalcanti",
             source: "Google"
@@ -181,7 +326,8 @@ const CONFIG = {
         {
             text: {
                 fr: "Des mains magiques pour les massages relaxants et le drainage lymphatique… propose aussi des soins high-tech.",
-                en: "Magical hands for relaxing massages and lymphatic drainage… also offers high-tech treatments."
+                en: "Magical hands for relaxing massages and lymphatic drainage… also offers high-tech treatments.",
+                pt: "Mãos mágicas para massagens relaxantes e drenagem linfática… também oferece tratamentos de alta tecnologia."
             },
             author: "Amanda Morais",
             source: "Google"
@@ -189,7 +335,8 @@ const CONFIG = {
         {
             text: {
                 fr: "Clinique moderne et chaleureuse… technologie de pointe… le traitement de l'acné a donné des résultats incroyables.",
-                en: "Warm modern clinic… state-of-the-art technology… acne facial treatment yielded incredible results."
+                en: "Warm modern clinic… state-of-the-art technology… acne facial treatment yielded incredible results.",
+                pt: "Clínica moderna e acolhedora… tecnologia de ponta… o tratamento facial para acne deu resultados incríveis."
             },
             author: "Ruana Natalia",
             source: "Google"
@@ -210,6 +357,7 @@ const ICONS = {
     aesthetic: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10A10 10 0 0 0 12 2z"/><path d="M12 6v12"/><path d="M8 10h8"/></svg>`,
     acne: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/><circle cx="7" cy="7" r="1"/><circle cx="17" cy="17" r="1"/><circle cx="17" cy="7" r="1"/><circle cx="7" cy="17" r="1"/></svg>`,
     tech: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="m15 13-3 3-3-3"/></svg>`,
+    chevronDown: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>`,
     menu: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`,
     call: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>`,
     message: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>`,
@@ -243,7 +391,9 @@ function renderUI() {
     renderTopBar();
     renderHero();
     renderServices();
+    renderTechnologies();
     renderReviews();
+    renderGallery();
     renderWhyChooseUs();
     renderBio();
     renderContactForm();
@@ -268,14 +418,19 @@ function renderTopBar() {
                 ${t.nav.map(n => `<a href="${n.anchor}">${n.label}</a>`).join('')}
             </nav>
             <div class="contact-links">
-                <div class="lang-toggle">
-                    <button class="${currentLang === 'fr' ? 'active' : ''}" onclick="setLanguage('fr')">FR</button>
-                    <span class="sep">|</span>
-                    <button class="${currentLang === 'en' ? 'active' : ''}" onclick="setLanguage('en')">EN</button>
-                </div>
                 <a href="tel:${CONFIG.business.phoneRaw}" class="phone-link">
                     ${ICONS.call} <span>${CONFIG.business.phone}</span>
                 </a>
+                <div class="lang-dropdown">
+                    <button class="lang-btn-current">
+                        ${currentLang.toUpperCase()} ${ICONS.chevronDown}
+                    </button>
+                    <div class="lang-dropdown-menu">
+                        <button onclick="setLanguage('fr')">Français</button>
+                        <button onclick="setLanguage('en')">English</button>
+                        <button onclick="setLanguage('pt')">Português</button>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -307,6 +462,32 @@ function renderHero() {
     root.appendChild(hero);
 }
 
+function renderGallery() {
+    const root = document.getElementById('content-root');
+    const t = CONFIG.translations[currentLang];
+    const section = document.createElement('section');
+    section.id = 'gallery';
+    section.className = 'gallery section-padding';
+
+    section.innerHTML = `
+        <div class="container">
+            <div class="section-header">
+                <h2>${t.gallery.title}</h2>
+                <div class="divider"></div>
+                <p class="subheadline" style="margin: 0 auto 3rem auto;">${t.gallery.subtitle}</p>
+            </div>
+            <div class="gallery-grid">
+                ${CONFIG.images.gallery.map((img, idx) => `
+                    <div class="gallery-item" data-index="${idx}">
+                        <img src="${img}" alt="Clinic Gallery ${idx + 1}" loading="lazy">
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    root.appendChild(section);
+}
+
 function renderServices() {
     const root = document.getElementById('content-root');
     const t = CONFIG.translations[currentLang];
@@ -322,13 +503,15 @@ function renderServices() {
             <div class="services-grid">
                 ${t.services.items.map((s, idx) => {
         const icons = ["massage", "drainage", "recovery", "aesthetic", "acne", "tech"];
+        const iconName = icons[idx % icons.length];
+        const imagePath = CONFIG.images.services[idx % CONFIG.images.services.length];
         return `
                         <div class="service-card">
                             <div class="service-card-image">
-                                <img src="${CONFIG.images.services[idx]}" alt="${s.title}">
+                                <img src="${imagePath}" alt="${s.title}">
                             </div>
                             <div class="service-card-content">
-                                <div class="service-icon">${ICONS[icons[idx]] || ''}</div>
+                                <div class="service-icon">${ICONS[iconName] || ''}</div>
                                 <h3>${s.title}</h3>
                                 <p>${s.desc}</p>
                                 <details class="service-details">
@@ -347,18 +530,58 @@ function renderServices() {
     root.appendChild(section);
 }
 
+function renderTechnologies() {
+    const root = document.getElementById('content-root');
+    const t = CONFIG.translations[currentLang];
+    const section = document.createElement('section');
+    section.id = 'technologies';
+    section.className = 'technologies section-padding';
+
+    section.innerHTML = `
+        <div class="container">
+            <div class="section-header">
+                <h2>${t.technologies.title}</h2>
+                <div class="divider"></div>
+                <p class="subheadline" style="margin: 0 auto 3rem auto;">${t.technologies.desc}</p>
+            </div>
+            <div class="tech-grid">
+                ${t.technologies.items.map((item, idx) => `
+                    <div class="tech-card">
+                        <div class="tech-image">
+                            <img src="${item.img}" alt="${item.title}" loading="lazy">
+                        </div>
+                        <div class="tech-content">
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    root.appendChild(section);
+}
+
 function renderReviews() {
     const root = document.getElementById('content-root');
     const t = CONFIG.translations[currentLang];
     const section = document.createElement('section');
     section.id = 'reviews';
-    section.className = 'reviews section-padding';
+    section.className = 'reviews'; // Removed global section-padding
+
     section.innerHTML = `
-        <div class="container">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 3rem;">
             <div class="section-header">
                 <h2>${t.reviews.title}</h2>
                 <div class="divider"></div>
             </div>
+        </div>
+
+        <div class="reviews-banner-full">
+            <img src="${CONFIG.images.reviewsBanner}" alt="Happy Clients" loading="lazy">
+        </div>
+
+        <div class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
             <div class="reviews-grid">
                 ${CONFIG.reviews.map(r => `
                     <div class="review-card">
@@ -583,21 +806,50 @@ function renderFooter() {
         <div class="container footer-inner">
             <div class="footer-col brand-col">
                 <img src="${CONFIG.images.logo}" alt="${CONFIG.business.name}" class="footer-logo">
-                <p>${t.tagline}</p>
+                <p class="footer-tagline">${t.tagline}</p>
+                <div class="social-links">
+                    <a href="${CONFIG.business.instagram}" target="_blank" class="social-icon" aria-label="Instagram">
+                        ${ICONS.instagram}
+                    </a>
+                </div>
             </div>
+            
             <div class="footer-col links-col">
                 <h4>Navigation</h4>
-                <ul>
+                <ul class="footer-nav-list">
                     ${t.nav.map(n => `<li><a href="${n.anchor}">${n.label}</a></li>`).join('')}
                 </ul>
             </div>
-            <div class="footer-col contact-col">
+
+            <div class="footer-col contact-col-premium">
                 <h4>Contact</h4>
-                <p>${CONFIG.business.address}</p>
-                <p>${CONFIG.business.phone}</p>
-                <a href="#contact" class="btn btn-primary btn-sm">${t.cta}</a>
+                <div class="contact-item">
+                    <span class="contact-icon">${ICONS.call}</span>
+                    <a href="tel:${CONFIG.business.phoneRaw}">${CONFIG.business.phone}</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon" style="transform: scale(0.9);">${ICONS.message}</span>
+                    <a href="mailto:${CONFIG.business.email}">${CONFIG.business.email}</a>
+                </div>
+                <div class="contact-item">
+                     <span class="contact-icon" style="transform: scale(0.9);">${ICONS.atmosphere}</span> <!-- Using specific icon as map marker placeholder -->
+                    <a href="${CONFIG.business.googleMapsDir}" target="_blank">
+                        ${CONFIG.business.address}
+                    </a>
+                </div>
+                 <div class="contact-item hours-item">
+                    <span class="contact-icon" style="transform: scale(0.9);">${ICONS.process}</span> <!-- Clock placeholder -->
+                    <div class="hours-list">
+                        ${CONFIG.business.hours.map(h => `<div><span>${h.day}:</span> ${h.time}</div>`).join('')}
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div class="container footer-signature-container">
+            <img src="${CONFIG.images.footerSignature}" alt="Taïse Neves" class="footer-signature-img">
+        </div>
+
         <div class="footer-bottom">
             <div class="container">
                 <p>&copy; ${new Date().getFullYear()} ${CONFIG.business.name}. ${currentLang === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}</p>
@@ -641,6 +893,7 @@ function initMobileMenu() {
         <div class="mobile-lang-toggle">
             <button class="${currentLang === 'fr' ? 'active' : ''}" onclick="setLanguage('fr')">FRançais</button>
             <button class="${currentLang === 'en' ? 'active' : ''}" onclick="setLanguage('en')">ENglish</button>
+            <button class="${currentLang === 'pt' ? 'active' : ''}" onclick="setLanguage('pt')">PorTuguês</button>
         </div>
         <h3>${CONFIG.business.name}</h3>
         <p>${CONFIG.business.phone}</p>
