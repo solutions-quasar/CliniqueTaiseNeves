@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leads/{leadId} {
+      allow create: if true; // Allows the Cloud Function (admin) or any user if needed, but Cloud Function uses admin SDK which bypasses rules.
+      allow read, update, delete: if request.auth != null; // Only authenticated users can see the erp data.
+    }
+  }
+}
