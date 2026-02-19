@@ -410,8 +410,8 @@ const ICONS = {
 /* --- Core Logic --- */
 
 document.addEventListener('DOMContentLoaded', () => {
+    setupMobileMenuListeners(); // Trigger listeners once
     renderUI();
-    initMobileMenu();
     initScrollEffects();
     initForm();
 });
@@ -438,10 +438,12 @@ function renderUI() {
     renderContactForm();
     renderContactInfo();
     renderFooter();
-    renderMobileBottomBar();
+    renderContactInfo();
+    renderFooter();
+    // renderMobileBottomBar(); // Removed dynamic rendering
 
-    // Re-init mobile menu since it depends on rendered items
-    initMobileMenu();
+    // Re-init mobile menu content
+    updateMobileMenuContent();
 }
 
 function renderTopBar() {
@@ -952,53 +954,23 @@ function renderFooter() {
     `;
 }
 
-function renderMobileBottomBar() {
-    const bar = document.getElementById('mobile-bottom-bar');
-    bar.innerHTML = `
-        <button id="menu-trigger" class="bar-btn">
-            ${ICONS.menu}
-            <span>Menu</span>
-        </button>
-        <a href="tel:${CONFIG.business.phoneRaw}" class="bar-btn">
-            ${ICONS.call}
-            <span>${currentLang === 'fr' ? 'Appeler' : 'Call'}</span>
-        </a>
-        <a href="#contact" class="bar-btn">
-            ${ICONS.message}
-            <span>${currentLang === 'fr' ? 'Message' : 'Message'}</span>
-        </a>
-    `;
-}
+
 
 /* --- Interactive Logic --- */
 
-function initMobileMenu() {
+function setupMobileMenuListeners() {
     const trigger = document.getElementById('menu-trigger');
     const close = document.getElementById('close-menu');
     const menu = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('mobile-nav-links');
-    const footer = document.getElementById('mobile-menu-footer');
 
-    // Populate links
-    navLinks.innerHTML = CONFIG.translations[currentLang].nav.map(n => `<a href="${n.anchor}" class="mobile-nav-item">${n.label}</a>`).join('');
-
-    // Populate footer
-    footer.innerHTML = `
-        <div class="mobile-lang-toggle">
-            <button class="${currentLang === 'fr' ? 'active' : ''}" onclick="setLanguage('fr')">FRançais</button>
-            <button class="${currentLang === 'en' ? 'active' : ''}" onclick="setLanguage('en')">ENglish</button>
-            <button class="${currentLang === 'pt' ? 'active' : ''}" onclick="setLanguage('pt')">PorTuguês</button>
-        </div>
-        <h3>${CONFIG.business.name}</h3>
-        <p>${CONFIG.business.phone}</p>
-        <p>${CONFIG.business.address}</p>
-    `;
-
-    trigger.addEventListener('click', () => {
-        menu.classList.add('active');
-        menu.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-    });
+    if (trigger) {
+        trigger.addEventListener('click', () => {
+            menu.classList.add('active');
+            menu.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        });
+    }
 
     const closeMenu = () => {
         menu.classList.remove('active');
@@ -1006,16 +978,45 @@ function initMobileMenu() {
         document.body.style.overflow = '';
     };
 
-    close.addEventListener('click', closeMenu);
-
-    // Close on link click
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
+    if (close) close.addEventListener('click', closeMenu);
 
     // Close on backdrop click
     menu.addEventListener('click', (e) => {
         if (e.target === menu) closeMenu();
+    });
+
+    // We attach link listeners in updateMobileMenuContent because links are re-rendered
+}
+
+function updateMobileMenuContent() {
+    const navLinks = document.getElementById('mobile-nav-links');
+    const footer = document.getElementById('mobile-menu-footer');
+    const menu = document.getElementById('mobile-menu');
+
+    // Populate links
+    navLinks.innerHTML = CONFIG.translations[currentLang].nav.map(n => `<a href="${n.anchor}" class="mobile-nav-item">${n.label}</a>`).join('');
+
+    // Populate footer
+    footer.innerHTML = `
+        <div class="mobile-lang-toggle">
+            <button class="${currentLang === 'fr' ? 'active' : ''}" onclick="setLanguage('fr')">FR</button>
+            <button class="${currentLang === 'en' ? 'active' : ''}" onclick="setLanguage('en')">EN</button>
+            <button class="${currentLang === 'pt' ? 'active' : ''}" onclick="setLanguage('pt')">PT</button>
+        </div>
+        <h3>${CONFIG.business.name}</h3>
+        <p>${CONFIG.business.phone}</p>
+        <p>${CONFIG.business.address}</p>
+    `;
+
+    // Re-attach close on link click (since links were regenerated)
+    const closeMenu = () => {
+        menu.classList.remove('active');
+        menu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    };
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
 }
 
