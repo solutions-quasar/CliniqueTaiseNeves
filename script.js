@@ -404,7 +404,10 @@ const ICONS = {
     instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>`,
     whatsapp: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>`,
     calendar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>`,
-    home: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`
+    home: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    mapPin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>`,
+    clock: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>`,
+    mail: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>`
 };
 
 /* --- Core Logic --- */
@@ -438,7 +441,7 @@ function renderUI() {
     renderContactForm();
     renderContactInfo();
     renderFooter();
-    renderContactInfo();
+
     renderFooter();
     // renderMobileBottomBar(); // Removed dynamic rendering
 
@@ -876,10 +879,10 @@ function renderContactInfo() {
                 </div>
                 <div class="info-actions">
                     <a href="${CONFIG.business.googleMapsDir}" target="_blank" class="btn btn-outline">${t.contact.directions}</a>
-                    <a href="${CONFIG.business.instagram}" target="_blank" class="instagram-link">
+                    <a href="${CONFIG.business.instagram}" target="_blank" class="btn btn-instagram btn-icon">
                         ${ICONS.instagram} Instagram
                     </a>
-                    <a href="https://wa.me/${CONFIG.business.phoneRaw.replace('+', '')}" target="_blank" class="whatsapp-link" style="display: flex; align-items: center; gap: 0.5rem; color: #25D366; text-decoration: none; font-weight: 500;">
+                    <a href="https://wa.me/${CONFIG.business.phoneRaw.replace('+', '')}" target="_blank" class="btn btn-whatsapp btn-icon">
                         ${ICONS.whatsapp} WhatsApp
                     </a>
                 </div>
@@ -928,17 +931,17 @@ function renderFooter() {
                     <a href="tel:${CONFIG.business.phoneRaw}">${CONFIG.business.phone}</a>
                 </div>
                 <div class="contact-item">
-                    <span class="contact-icon" style="transform: scale(0.9);">${ICONS.message}</span>
+                    <span class="contact-icon">${ICONS.mail}</span>
                     <a href="mailto:${CONFIG.business.email}">${CONFIG.business.email}</a>
                 </div>
                 <div class="contact-item">
-                     <span class="contact-icon" style="transform: scale(0.9);">${ICONS.atmosphere}</span> <!-- Using specific icon as map marker placeholder -->
+                     <span class="contact-icon">${ICONS.mapPin}</span>
                     <a href="${CONFIG.business.googleMapsDir}" target="_blank">
                         ${CONFIG.business.address}
                     </a>
                 </div>
                  <div class="contact-item hours-item">
-                    <span class="contact-icon" style="transform: scale(0.9);">${ICONS.process}</span> <!-- Clock placeholder -->
+                    <span class="contact-icon">${ICONS.clock}</span>
                     <div class="hours-list">
                         ${CONFIG.business.hours.map(h => `<div><span>${h.day}:</span> ${h.time}</div>`).join('')}
                     </div>
@@ -960,32 +963,45 @@ function renderFooter() {
 
 function setupMobileMenuListeners() {
     const trigger = document.getElementById('menu-trigger');
-    const close = document.getElementById('close-menu');
     const menu = document.getElementById('mobile-menu');
-    const navLinks = document.getElementById('mobile-nav-links');
+    // const navLinks = document.getElementById('mobile-nav-links'); // Not used here directly
 
-    if (trigger) {
-        trigger.addEventListener('click', () => {
+    const toggleMenu = () => {
+        const isActive = menu.classList.contains('active');
+
+        if (isActive) {
+            // Close
+            menu.classList.remove('active');
+            menu.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            document.body.classList.remove('menu-open');
+        } else {
+            // Open
             menu.classList.add('active');
             menu.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('menu-open');
+        }
+    };
+
+    if (trigger) {
+        trigger.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent immediate bubbling to body click
+            toggleMenu();
         });
     }
 
-    const closeMenu = () => {
-        menu.classList.remove('active');
-        menu.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-    };
-
-    if (close) close.addEventListener('click', closeMenu);
-
-    // Close on backdrop click
+    // Close on backdrop click (clicking outside content)
     menu.addEventListener('click', (e) => {
-        if (e.target === menu) closeMenu();
+        if (e.target === menu) {
+            toggleMenu();
+        }
     });
 
     // We attach link listeners in updateMobileMenuContent because links are re-rendered
+    // Expose toggleMenu globally or attach it there? 
+    // Ideally, we keep it contained. We can attach a custom event or just reuse the logic.
+    // For simplicity, we'll re-implement the close-only logic for links.
 }
 
 function updateMobileMenuContent() {

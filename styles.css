@@ -174,6 +174,30 @@ h3 {
     width: 100%;
 }
 
+.btn-instagram {
+    background: #E1306C;
+    color: var(--clr-white);
+}
+
+.btn-instagram:hover {
+    background: #C13584;
+    color: var(--clr-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: var(--clr-white);
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E;
+    color: var(--clr-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
 /* --- Top Bar (Desktop) --- */
 .top-bar {
     position: fixed;
@@ -388,6 +412,29 @@ h3 {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(50%) translateY(0);
+}
+
+/* Burger Animation Styles */
+.bar-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.bar-btn svg line {
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menu Open State for Burger */
+.menu-open #menu-trigger svg line:nth-child(1) {
+    opacity: 0;
+}
+
+.menu-open #menu-trigger svg line:nth-child(2) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-open #menu-trigger svg line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .lang-dropdown-menu button {
@@ -728,20 +775,14 @@ h3 {
     grid-row: span 2;
 }
 
-/* Large left */
+/* Top right */
 .gallery-item:nth-child(2) {
     grid-column: span 3;
     grid-row: span 1;
 }
 
-/* Top right */
-.gallery-item:nth-child(3) {
-    grid-column: span 1.5;
-    grid-row: span 1;
-}
-
 /* Bottom right 1 */
-.gallery-item:nth-child(4) {
+.gallery-item:nth-child(3) {
     grid-column: span 1.5;
     grid-row: span 1;
 }
@@ -1568,7 +1609,7 @@ h3 {
     display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .form-card {
         padding: 2.5rem 1.5rem;
     }
@@ -1738,30 +1779,37 @@ h3 {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .contact-item a {
     color: inherit;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .contact-item a:hover {
-    color: var(--clr-white);
+    color: #fff;
     text-decoration: underline;
 }
 
 .contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
-    color: var(--clr-accent);
-    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+    color: #c5a059;
+    /* Hardcoded accent color for reliability in footer context */
 }
 
 .contact-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
 }
 
 .hours-list {
@@ -1809,7 +1857,8 @@ h3 {
     background: var(--clr-glass);
     backdrop-filter: blur(15px);
     border-top: 1px solid var(--clr-border);
-    z-index: 1000;
+    z-index: 2002;
+    /* Higher than mobile menu */
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: env(safe-area-inset-bottom);
 }
@@ -1863,48 +1912,34 @@ h3 {
 }
 
 .mobile-menu-content {
-    padding: 4rem 2rem;
+    padding: clamp(1rem, 2.5vh, 2rem) 2rem 60px 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-y: auto;
+    max-height: 100vh;
 }
 
-.close-menu {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background: var(--clr-bg);
-    border: 1px solid var(--clr-border);
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: var(--clr-accent);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 2001;
-}
+
 
 .mobile-nav-links {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: clamp(1rem, 2.5vh, 2rem);
     text-align: center;
 }
 
 .mobile-nav-item {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3.5vh, 2rem);
     font-family: var(--ff-heading);
     font-weight: 600;
 }
 
 .mobile-menu-footer {
-    margin-top: 4rem;
+    margin-top: clamp(1.5rem, 4vh, 3rem);
     text-align: center;
     color: var(--clr-text-muted);
 }
@@ -1917,7 +1952,7 @@ h3 {
     padding: 5px;
     border-radius: 100px;
     gap: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: clamp(1rem, 3vh, 2.5rem);
     position: relative;
 }
 
