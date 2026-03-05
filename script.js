@@ -34,7 +34,8 @@ const CONFIG = {
                 title: "Nos Partenaires",
                 items: [
                     { name: "Simony Teixeira", role: "Infirmière clinicienne injectrice", img: "partner_simony.png" },
-                    { name: "Maria Carolina", role: "Infirmière LPN - Spécialisée en médecine esthétique", img: "partner_maria.png" }
+                    { name: "Maria Carolina", role: "Infirmière LPN - Spécialisée en médecine esthétique", img: "partner_maria.png" },
+                    { name: "Dr. Nathalie Gagnon - Urologue", role: "Consultation médicale", img: "images/nathalie-gagnon-urologue.png" }
                 ]
             },
             bio: {
@@ -54,7 +55,7 @@ const CONFIG = {
                 details: "Détails",
                 specialized: "Soin spécialisé pour votre bien-être et beauté.",
                 items: [
-                    { title: "Nettoyage en profondeur", desc: "Soin complet pour une peau purifiée et éclatante." },
+                    { title: "Nettoyage de la peau", desc: "Soin complet pour une peau purifiée et éclatante." },
                     { title: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement." },
                     { title: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire." },
                     { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight) : Peeling au carbone pour un éclat instantané." },
@@ -63,8 +64,7 @@ const CONFIG = {
                     { title: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid." },
                     { title: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections." },
                     { title: "Soins Pré/Post-Opératoires", desc: "Suivi spécialisé pour chirurgie plastique, bariatrique et post-partum.", icon: "recovery" },
-                    { title: "Massothérapie ", desc: "Massage thérapeutique, myofascial, et drainage lymphatique (Renata Franca, Goddoy, Leduc).", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Massage Relaxant", desc: "Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_relaxant.jpg", icon: "massage" },
+                    { title: "Massothérapie", desc: "Massage thérapeutique, myofascial, relaxant et drainage lymphatique (Renata Franca, Goddoy, Leduc). Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_myofascial.jpg", icon: "massage" },
                     { title: "Miracle Face (Renata Franca)", desc: "Massage du visage effet lifting immédiat et drainage lymphatique.", img: "service_miracle_face.jpg", icon: "aesthetic" },
                     { title: "Kinesiotape", desc: "Soulagement de la douleur, amélioration de la circulation et soutien musculaire.", img: "service_kinesio_new.jpg", icon: "recovery" }
                 ]
@@ -135,7 +135,8 @@ const CONFIG = {
                 title: "Our Partners",
                 items: [
                     { name: "Simony Teixeira", role: "Clinical Nurse Injector", img: "partner_simony.png" },
-                    { name: "Maria Carolina", role: "LPN Nurse - Medical Aesthetics Specialist", img: "partner_maria.png" }
+                    { name: "Maria Carolina", role: "LPN Nurse - Medical Aesthetics Specialist", img: "partner_maria.png" },
+                    { name: "Dr. Nathalie Gagnon - Urologist", role: "Medical Consultation", img: "images/nathalie-gagnon-urologue.png" }
                 ]
             },
             bio: {
@@ -155,7 +156,7 @@ const CONFIG = {
                 details: "Details",
                 specialized: "Specialized care for your well-being and beauty.",
                 items: [
-                    { title: "Deep Skin Cleansing", desc: "Complete care for purified and radiant skin." },
+                    { title: "Skin Cleansing", desc: "Complete care for purified and radiant skin." },
                     { title: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation." },
                     { title: "Q-switched Laser", desc: "Effective and safe tattoo removal." },
                     { title: "Hollywood Peel", desc: "Q-switched Laser (Sharplight): Carbon peel for instant glow." },
@@ -164,8 +165,7 @@ const CONFIG = {
                     { title: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold." },
                     { title: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections." },
                     { title: "Pre/Post-Op Care", desc: "Specialized follow-up for plastic, bariatric, and facial surgery.", icon: "recovery" },
-                    { title: "Massage & Drainage", desc: "Therapeutic, myofascial, and lymphatic drainage (Renata Franca, Goddoy, Leduc).", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Relaxing Massage", desc: "Muscle relaxation and stress reduction for complete well-being.", img: "service_massage_relaxant.jpg", icon: "massage" },
+                    { title: "Massage Therapy", desc: "Therapeutic, myofascial, relaxing massage and lymphatic drainage (Renata Franca, Goddoy, Leduc). Muscle relaxation and stress reduction for complete well-being.", img: "service_massage_myofascial.jpg", icon: "massage" },
                     { title: "Miracle Face (Renata Franca)", desc: "Immediate lifting effect facial massage and lymphatic drainage.", img: "service_miracle_face.jpg", icon: "aesthetic" },
                     { title: "Kinesiotape", desc: "Pain relief, improved circulation, and muscle support.", img: "service_kinesio_new.jpg", icon: "recovery" }
                 ]
@@ -236,7 +236,8 @@ const CONFIG = {
                 title: "Nossos Parceiros",
                 items: [
                     { name: "Simony Teixeira", role: "Enfermeira esteta injetora", img: "partner_simony.png" },
-                    { name: "Maria Carolina", role: "Enfermeira LPN - Especializada em medicina estética", img: "partner_maria.png" }
+                    { name: "Maria Carolina", role: "Enfermeira LPN - Especializada em medicina estética", img: "partner_maria.png" },
+                    { name: "Dr. Nathalie Gagnon - Urologista", role: "Consulta médica", img: "images/nathalie-gagnon-urologue.png" }
                 ]
             },
             bio: {
@@ -256,7 +257,7 @@ const CONFIG = {
                 details: "Detalhes",
                 specialized: "Cuidado especializado para seu bem-estar e beleza.",
                 items: [
-                    { title: "Limpeza Profunda", desc: "Cuidado completo para uma pele purificada e radiante." },
+                    { title: "Limpeza de Pele", desc: "Cuidado completo para uma pele purificada e radiante." },
                     { title: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento." },
                     { title: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura." },
                     { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight): Peeling de carbono para brilho instantâneo." },
@@ -265,8 +266,7 @@ const CONFIG = {
                     { title: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio." },
                     { title: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições." },
                     { title: "Cuidados Pré/Pós-Op", desc: "Acompanhamento especializado para cirurgia plástica, bariátrica e facial.", icon: "recovery" },
-                    { title: "Massoterapia & Drenagem", desc: "Terapêutica, miofascial e drenagem linfática (Renata Franca, Goddoy, Leduc).", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Massagem Relaxante", desc: "Relaxamento muscular e redução do estresse para um bem-estar completo.", img: "service_massage_relaxant.jpg", icon: "massage" },
+                    { title: "Massoterapia", desc: "Massagem terapêutica, miofascial, relaxante e drenagem linfática (Renata Franca, Goddoy, Leduc). Relaxamento muscular e redução do estresse para um bem-estar completo.", img: "service_massage_myofascial.jpg", icon: "massage" },
                     { title: "Miracle Face (Renata Franca)", desc: "Massagem facial com efeito lifting imediato e drenagem linfática.", img: "service_miracle_face.jpg", icon: "aesthetic" },
                     { title: "Kinesio Taping", desc: "Alívio da dor, melhora da circulação e suporte muscular.", img: "service_kinesio_new.jpg", icon: "recovery" }
                 ]
