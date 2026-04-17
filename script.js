@@ -55,18 +55,21 @@ const CONFIG = {
                 details: "Détails",
                 specialized: "Soin spécialisé pour votre bien-être et beauté.",
                 items: [
-                    { title: "Nettoyage de la peau", desc: "Soin complet pour une peau purifiée et éclatante." },
-                    { title: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement." },
-                    { title: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire." },
-                    { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight) : Peeling au carbone pour un éclat instantané." },
-                    { title: "Épilation Laser", desc: "Technologies Sharplight et LightSheer pour une peau douce durablement." },
-                    { title: "Traitement par radiofréquence (Sharplight et Exilis de BTL)", desc: "Traitement de la cellulite et remodelage corporel (réduction de la graisse localisée), pour le relâchement cutané du corps. Remodelage du visage et réduction du volume du menton", img: "service_rf_new.jpg" },
-                    { title: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid." },
-                    { title: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections." },
-                    { title: "Soins Pré/Post-Opératoires", desc: "Suivi spécialisé pour chirurgie plastique, bariatrique et post-partum.", icon: "recovery" },
-                    { title: "Massothérapie", desc: "Massage thérapeutique, myofascial, relaxant et drainage lymphatique (Renata Franca, Goddoy, Leduc). Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Miracle Face (Renata Franca)", desc: "Massage du visage effet lifting immédiat et drainage lymphatique.", img: "service_miracle_face.jpg", icon: "aesthetic" },
-                    { title: "Kinesiotape", desc: "Soulagement de la douleur, amélioration de la circulation et soutien musculaire.", img: "service_kinesio_new.jpg", icon: "recovery" }
+                    { title: "Massothérapie", tech: "Massage thérapeutique & Myofascial", desc: "Massage thérapeutique, myofascial, relaxant et drainage lymphatique (Renata Franca, Goddoy, Leduc). Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Soins Post-Opératoires", tech: "Récupération & Cicatrisation", desc: "Suivi spécialisé pour chirurgie plastique, bariatrique et post-partum.", img: "service_post_op.jpg" },
+                    { title: "Kinésithérapie", tech: "Kinesiotaping", desc: "Soulagement de la douleur, amélioration de la circulation et soutien musculaire.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Consultation médicale - Urologue", tech: "Dr. Nathalie Gagnon", desc: "Consultation spécialisée en urologie pour votre santé et bien-être.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
+                    { title: "Consultation en Injections Esthétiques", tech: "Simony Teixeira", desc: "Soins médico-esthétiques et injections personnalisés pour raviver votre beauté naturelle.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Soins Médico-Esthétiques Spécialisés", tech: "Maria Carolina", desc: "Expertise en soins esthétiques médicaux et régénération cutanée pour une peau revitalisée.", img: "partner_maria.png", icon: "nurse" },
+                    { title: "Nettoyage de la peau", tech: "Nettoyage de la peau classique", desc: "Soin complet pour une peau purifiée et éclatante.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rajeunissement & Clarté", tech: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement.", img: "service_sharplight.jpg" },
+                    { title: "Dé-tatouage Efficace", tech: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire.", img: "service_tattoo_removal.jpg" },
+                    { title: "Coup d'Éclat Instantané", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduisez l'exces de sébum, resserrez les pores et unifiez le teint.", img: "service_hollywood_peel.jpg" },
+                    { title: "Épilation Permanente", tech: "Sharplight & LightSheer", desc: "Technologies Sharplight et LightSheer pour une peau douce durablement.", img: "service_hair_removal.jpg" },
+                    { title: "Raffermissement & Remodelage", tech: "Radiofréquence (Sharplight & Exilis)", desc: "Traitement de la cellulite et remodelage corporel (réduction de la graisse localisée), pour le relâchement cutané du corps. Remodelage du visage et réduction du volume du menton", img: "service_rf_new.jpg" },
+                    { title: "Sculpture par le Froid", tech: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid.", img: "service_cryolipolysis.jpg" },
+                    { title: "Peau Lissée & Régénérée", tech: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections.", img: "service_microneedling.jpg" },
+                    { title: "Lifting Facial Naturel", tech: "Miracle Face (Renata Franca)", desc: "Massage du visage effet lifting immédiat et drainage lymphatique.", img: "service_miracle_face.jpg", icon: "aesthetic" }
                 ]
             },
             gallery: {
@@ -156,18 +159,21 @@ const CONFIG = {
                 details: "Details",
                 specialized: "Specialized care for your well-being and beauty.",
                 items: [
-                    { title: "Skin Cleansing", desc: "Complete care for purified and radiant skin." },
-                    { title: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation." },
-                    { title: "Q-switched Laser", desc: "Effective and safe tattoo removal." },
-                    { title: "Hollywood Peel", desc: "Q-switched Laser (Sharplight): Carbon peel for instant glow." },
-                    { title: "Laser Hair Removal", desc: "Sharplight and LightSheer technologies for lastingly smooth skin." },
-                    { title: "Radiofrequency", desc: "Body and facial contouring, cellulite, and skin tightening (Sharplight and Exilis).", img: "service_rf_new.jpg" },
-                    { title: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold." },
-                    { title: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections." },
-                    { title: "Pre/Post-Op Care", desc: "Specialized follow-up for plastic, bariatric, and facial surgery.", icon: "recovery" },
-                    { title: "Massage Therapy", desc: "Therapeutic, myofascial, relaxing massage and lymphatic drainage (Renata Franca, Goddoy, Leduc). Muscle relaxation and stress reduction for complete well-being.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Miracle Face (Renata Franca)", desc: "Immediate lifting effect facial massage and lymphatic drainage.", img: "service_miracle_face.jpg", icon: "aesthetic" },
-                    { title: "Kinesiotape", desc: "Pain relief, improved circulation, and muscle support.", img: "service_kinesio_new.jpg", icon: "recovery" }
+                    { title: "Massage Therapy", tech: "Therapeutic & Myofascial Massage", desc: "Therapeutic, myofascial, relaxing massage and lymphatic drainage (Renata Franca, Goddoy, Leduc). Muscle relaxation and stress reduction for complete well-being.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Post-Op Care", tech: "Recovery & Healing", desc: "Specialized follow-up for plastic, bariatric, and facial surgery.", img: "service_post_op.jpg" },
+                    { title: "Kinesitherapy", tech: "Kinesiotaping", desc: "Pain relief, improved circulation, and muscle support.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Medical Consultation - Urologist", tech: "Dr. Nathalie Gagnon", desc: "Specialized urological consultation for your health and well-being.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
+                    { title: "Aesthetic Injection Consultation", tech: "Simony Teixeira", desc: "Personalized medical-aesthetic care and injections to revive your natural beauty.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Specialized Medical-Aesthetic Care", tech: "Maria Carolina", desc: "Expertise in medical aesthetic treatments and skin regeneration for revitalized skin.", img: "partner_maria.png", icon: "nurse" },
+                    { title: "Skin Cleansing", tech: "Classic Skin Cleansing", desc: "Complete care for purified and radiant skin.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rejuvenation & Clarity", tech: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation.", img: "service_sharplight.jpg" },
+                    { title: "Effective Tattoo Removal", tech: "Q-switched Laser", desc: "Effective and safe tattoo removal.", img: "service_tattoo_removal.jpg" },
+                    { title: "Instant Glow", tech: "Q-switched Laser (Peeling Holywood)", desc: "Reduce excess sebum, tighten pores, and unify skin tone.", img: "service_hollywood_peel.jpg" },
+                    { title: "Permanent Hair Removal", tech: "Sharplight & LightSheer", desc: "Sharplight and LightSheer technologies for lastingly smooth skin.", img: "service_hair_removal.jpg" },
+                    { title: "Firming & Body Contouring", tech: "Radiofrequency (Sharplight & Exilis)", desc: "Body and facial contouring, cellulite, and skin tightening (Sharplight and Exilis).", img: "service_rf_new.jpg" },
+                    { title: "Cold Body Sculpting", tech: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold.", img: "service_cryolipolysis.jpg" },
+                    { title: "Skin Regeneration", tech: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections.", img: "service_microneedling.jpg" },
+                    { title: "Natural Face Lifting", tech: "Miracle Face (Renata Franca)", desc: "Immediate lifting effect facial massage and lymphatic drainage.", img: "service_miracle_face.jpg", icon: "aesthetic" }
                 ]
             },
             gallery: {
@@ -257,18 +263,21 @@ const CONFIG = {
                 details: "Detalhes",
                 specialized: "Cuidado especializado para seu bem-estar e beleza.",
                 items: [
-                    { title: "Limpeza de Pele", desc: "Cuidado completo para uma pele purificada e radiante." },
-                    { title: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento." },
-                    { title: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura." },
-                    { title: "Peeling Hollywood", desc: "Laser Q-switched (Sharplight): Peeling de carbono para brilho instantâneo." },
-                    { title: "Depilação a Laser", desc: "Tecnologias Sharplight e LightSheer para pele macia duradoura." },
-                    { title: "Radiofrequência", desc: "Remodelação corporal e facial, celulite e flacidez (Sharplight e Exilis).", img: "service_rf_new.jpg" },
-                    { title: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio." },
-                    { title: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições." },
-                    { title: "Cuidados Pré/Pós-Op", desc: "Acompanhamento especializado para cirurgia plástica, bariátrica e facial.", icon: "recovery" },
-                    { title: "Massoterapia", desc: "Massagem terapêutica, miofascial, relaxante e drenagem linfática (Renata Franca, Goddoy, Leduc). Relaxamento muscular e redução do estresse para um bem-estar completo.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Miracle Face (Renata Franca)", desc: "Massagem facial com efeito lifting imediato e drenagem linfática.", img: "service_miracle_face.jpg", icon: "aesthetic" },
-                    { title: "Kinesio Taping", desc: "Alívio da dor, melhora da circulação e suporte muscular.", img: "service_kinesio_new.jpg", icon: "recovery" }
+                    { title: "Massoterapia", tech: "Massagem Terapêutica & Miofascial", desc: "Massagem terapêutica, miofascial, relaxante e drenagem linfática (Renata Franca, Goddoy, Leduc). Relaxamento muscular e redução do estresse para um bem-estar completo.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Pós-Op & Recuperação", tech: "Recuperação & Cicatrização", desc: "Acompanhamento especializado para cirurgia plástica, bariátrica e facial.", img: "service_post_op.jpg" },
+                    { title: "Kinesioterapia", tech: "Kinesiotaping", desc: "Alívio da dor, melhora da circulação e suporte muscular.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Consulta Médica - Urologista", tech: "Dra. Nathalie Gagnon", desc: "Consulta especializada em urologia para sua saúde e bem-estar.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
+                    { title: "Consulta de Injeções Estéticas", tech: "Simony Teixeira", desc: "Cuidados médico-estéticos e injeções personalizados para realçar sua beleza natural.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Cuidados Médico-Estéticos Especializados", tech: "Maria Carolina", desc: "Expertise em tratamentos estéticos médicos e regeneração para uma pele revitalizada.", img: "partner_maria.png", icon: "nurse" },
+                    { title: "Limpeza de Pele", tech: "Limpeza de Pele Clássica", desc: "Cuidado completo para uma pele purificada e radiante.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rejuvenescimento & Claridade", tech: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento.", img: "service_sharplight.jpg" },
+                    { title: "Remoção de Tatuagem", tech: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura.", img: "service_tattoo_removal.jpg" },
+                    { title: "Brilho Instantâneo", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduza o excesso de sebo, feche os poros e unifique o tom da pele.", img: "service_hollywood_peel.jpg" },
+                    { title: "Depilação Permanente", tech: "Sharplight & LightSheer", desc: "Tecnologias Sharplight e LightSheer para pele macia duradoura.", img: "service_hair_removal.jpg" },
+                    { title: "Firmeza & Remodelagem", tech: "Radiofrequência (Sharplight & Exilis)", desc: "Remodelação corporal e facial, celulite e flacidez (Sharplight e Exilis).", img: "service_rf_new.jpg" },
+                    { title: "Escultura pelo Frio", tech: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio.", img: "service_cryolipolysis.jpg" },
+                    { title: "Regeneração da Pele", tech: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições.", img: "service_microneedling.jpg" },
+                    { title: "Lifting Facial Natural", tech: "Miracle Face (Renata Franca)", desc: "Massagem facial com efeito lifting imediato e drenagem linfática.", img: "service_miracle_face.jpg", icon: "aesthetic" }
                 ]
             },
             gallery: {
@@ -576,15 +585,9 @@ function renderServices() {
                                 <img src="${imagePath}" alt="${s.title}">
                             </div>
                             <div class="service-card-content">
-                                <div class="service-icon">${ICONS[iconName] || ''}</div>
                                 <h3>${s.title}</h3>
                                 <p>${s.desc}</p>
-                                <details class="service-details">
-                                    <summary>${t.services.details}</summary>
-                                    <div class="details-content">
-                                        <p>${t.services.specialized}</p>
-                                    </div>
-                                </details>
+                                <div class="service-tech-label">${s.tech}</div>
                             </div>
                         </div>
                     `;

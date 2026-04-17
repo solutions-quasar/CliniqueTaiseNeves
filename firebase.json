@@ -21,5 +21,19 @@
             "**/.*",
             "**/node_modules/**"
         ]
+    },
+    "emulators": {
+        "hosting": {
+            "port": 7000
+        },
+        "functions": {
+            "port": 7001
+        },
+        "firestore": {
+            "port": 8080
+        },
+        "ui": {
+            "enabled": true
+        }
     }
 }

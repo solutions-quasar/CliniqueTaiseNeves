@@ -688,42 +688,31 @@ h3 {
 .service-card-content {
     padding: 2rem;
     flex-grow: 1;
-}
-
-.service-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--clr-bg);
-    color: var(--clr-accent);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius-md);
-    margin-bottom: 1.5rem;
+    flex-direction: column;
 }
 
-.service-icon svg {
-    width: 32px;
-    height: 32px;
+.service-card-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--clr-text);
 }
 
-.service-details {
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--clr-border);
-    padding-top: 1rem;
-}
-
-.service-details summary {
-    cursor: pointer;
-    font-weight: 500;
-    color: var(--clr-accent);
-    outline: none;
-}
-
-.details-content {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+.service-card-content p {
+    font-size: 0.95rem;
     color: var(--clr-text-muted);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.service-tech-label {
+    font-size: 0.75rem;
+    color: var(--clr-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-top: 1rem;
+    border-top: 1px solid var(--clr-border);
+    margin-top: auto;
 }
 
 @media (max-width: 991px) {
