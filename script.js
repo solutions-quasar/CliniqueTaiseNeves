@@ -23,12 +23,11 @@ const CONFIG = {
                 { label: "Avis", anchor: "#reviews" },
                 { label: "Pourquoi Nous", anchor: "#why-choose-us" },
                 { label: "À Propos", anchor: "#bio" },
-                { label: "Partenaires", anchor: "#partners" },
                 { label: "Contact", anchor: "#contact" }
             ],
             more: "Plus",
-            tagline: "Massothérapie et soins esthétiques à Québec.",
-            description: "Une clinique chaleureuse et moderne axée sur des résultats concrets, le confort et les soins professionnels.",
+            tagline: "Massothérapie et soins esthétiques brésiliens à Québec.",
+            description: "Massothérapie brésilienne, consultations médicales avec urologue et traitements esthétiques avec infirmières (Sculptra, Radiesse, Acide Hyaluronique, Botox). Une clinique axée sur des résultats concrets et le confort.",
             cta: "Prendre rendez-vous",
             partners: {
                 title: "Nos Partenaires",
@@ -42,7 +41,7 @@ const CONFIG = {
                 title: "Propriétaire & Thérapeute certifiée",
                 description: "Passionnée par le bien-être et l'esthétique, Taíse Neves combine expertise technique et approche humaine pour offrir des soins personnalisés de haute qualité. Avec des années d'expérience en massothérapie et drainage lymphatique, elle s'engage à aider chaque client à atteindre ses objectifs de santé et de confiance en soi.",
                 stats: [
-                    { label: "Années d'Expérience", value: "10+" },
+                    { label: "Années d'Expérience", value: "18+" },
                     { label: "Clients Heureux", value: "5k+" },
                     { label: "Certifications", value: "12" }
                 ],
@@ -55,21 +54,25 @@ const CONFIG = {
                 details: "Détails",
                 specialized: "Soin spécialisé pour votre bien-être et beauté.",
                 items: [
-                    { title: "Massothérapie", tech: "Massage thérapeutique & Myofascial", desc: "Massage thérapeutique, myofascial, relaxant et drainage lymphatique (Renata Franca, Goddoy, Leduc). Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Soins Post-Opératoires", tech: "Récupération & Cicatrisation", desc: "Suivi spécialisé pour chirurgie plastique, bariatrique et post-partum.", img: "service_post_op.jpg" },
-                    { title: "Kinésithérapie", tech: "Kinesiotaping", desc: "Soulagement de la douleur, amélioration de la circulation et soutien musculaire.", img: "service_kinesio_new.jpg", icon: "recovery" },
-                    { title: "Consultation médicale - Urologue", tech: "Dr. Nathalie Gagnon", desc: "Consultation spécialisée en urologie pour votre santé et bien-être.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
-                    { title: "Consultation en Injections Esthétiques", tech: "Simony Teixeira", desc: "Soins médico-esthétiques et injections personnalisés pour raviver votre beauté naturelle.", img: "partner_simony.png", icon: "nurse" },
-                    { title: "Soins Médico-Esthétiques Spécialisés", tech: "Maria Carolina", desc: "Expertise en soins esthétiques médicaux et régénération cutanée pour une peau revitalisée.", img: "partner_maria.png", icon: "nurse" },
-                    { title: "Nettoyage de la peau", tech: "Nettoyage de la peau classique", desc: "Soin complet pour une peau purifiée et éclatante.", img: "service_skin_cleansing.jpg" },
-                    { title: "Rajeunissement & Clarté", tech: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement.", img: "service_sharplight.jpg" },
-                    { title: "Dé-tatouage Efficace", tech: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire.", img: "service_tattoo_removal.jpg" },
-                    { title: "Coup d'Éclat Instantané", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduisez l'exces de sébum, resserrez les pores et unifiez le teint.", img: "service_hollywood_peel.jpg" },
-                    { title: "Épilation Permanente", tech: "Sharplight & LightSheer", desc: "Technologies Sharplight et LightSheer pour une peau douce durablement.", img: "service_hair_removal.jpg" },
-                    { title: "Raffermissement & Remodelage", tech: "Radiofréquence (Sharplight & Exilis)", desc: "Traitement de la cellulite et remodelage corporel (réduction de la graisse localisée), pour le relâchement cutané du corps. Remodelage du visage et réduction du volume du menton", img: "service_rf_new.jpg" },
-                    { title: "Sculpture par le Froid", tech: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid.", img: "service_cryolipolysis.jpg" },
-                    { title: "Peau Lissée & Régénérée", tech: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections.", img: "service_microneedling.jpg" },
-                    { title: "Lifting Facial Naturel", tech: "Miracle Face (Renata Franca)", desc: "Massage du visage effet lifting immédiat et drainage lymphatique.", img: "service_miracle_face.jpg", icon: "aesthetic" }
+                    { title: "Massothérapie", tech: "Expérience depuis 2007", desc: "Massages thérapeutiques et drainage lymphatique brésilien (Renata França, Godoy).", fullDesc: "Massages thérapeutiques, myofasciaux et relaxants (spécialiste du massage suédois). Massage relaxant selon la méthode Renata França®️. Formation en drainage lymphatique (7 formations), incluant les méthodes Renata França®️, Godoy®️, Leduc et Vodder. Massage du visage Miracle Touch®️ (drainage et remodelage). Détente musculaire et réduction du stress pour un bien-être complet.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Soins Post-Opératoires", tech: "Suivi Spécialisé & Technologies", desc: "Suivi spécialisé avec technologies avancées pour une récupération sans fibrose.", fullDesc: "Traitement personnalisé incluant drainage, laser, LED, ultrasons, radiofréquence et kinésiotape. Améliore la douleur, module l'inflammation, réduit l'œdème et les ecchymoses tout en diminuant le risque de fibrose et de nécrose pour une récupération optimale.", img: "service_post_op.jpg" },
+                    { title: "Kinésithérapie", tech: "Kinesiotaping", desc: "Kinesiotaping pour réduire l'œdème et soutenir les muscles sans immobilisation.", fullDesc: "Bandage élastique utilisé en traitement des lésions et en soins postopératoires (ex. liposuccion). Réduit l'œdème par soulèvement de la peau, gère la douleur par neuromodulation et soutient les muscles sans les immobiliser. Prévient la fibrose et les adhérences pour une guérison harmonieuse.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Nettoyage de la peau", tech: "Méthode Brésilienne Profonde", desc: "Nettoyage en profondeur avec extraction manuelle complète des points noirs.", fullDesc: "Protocole minutieux axé sur l'extraction manuelle complète des points noirs. Étape essentielle pour purifier la peau et maximiser l'efficacité des traitements technologiques ultérieurs (lasers, injections). Inclut haute fréquence bactéricide et masque apaisant pour un éclat restauré.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rajeunissement & Clarté", tech: "Lumière Pulsée (Sharplight)", desc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement.", fullDesc: "Rosacée, télangiectasies, acné, folliculite, imperfections et rajeunissement. Traitement haute technologie avec Sharplight.", img: "service_sharplight.jpg" },
+                    { title: "Dé-tatouage Efficace", tech: "Laser Q-switched", desc: "Dé-tatouage efficace et sécuritaire.", fullDesc: "Dé-tatouage efficace et sécuritaire utilisant la technologie Laser Q-switched.", img: "service_tattoo_removal.jpg" },
+                    { title: "Coup d'Éclat Instantané", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduisez l'exces de sébum, resserrez les pores et unifiez le teint.", fullDesc: "Laser Q-switched (Peeling Holywood) pour réduire l'exces de sébum, resserrez les pores et unifiez le teint.", img: "service_hollywood_peel.jpg" },
+                    { title: "Épilation Permanente", tech: "Sharplight & LightSheer", desc: "Technologies Sharplight et LightSheer pour une peau douce durablement.", fullDesc: "Technologies Sharplight et LightSheer pour une peau douce durablement. Élimination permanente des poils.", img: "service_hair_removal.jpg" },
+                    { title: "Raffermissement & Remodelage", tech: "Radiofréquence (Sharplight & Exilis)", desc: "Traitement de la cellulite et remodelage corporel pour le relâchement cutané.", fullDesc: "Traitement de la cellulite et remodelage corporel (réduction de la graisse localisée), pour le relâchement cutané du corps. Remodelage du visage et réduction du volume du menton.", img: "service_rf_new.jpg" },
+                    { title: "Sculpture par le Froid", tech: "Cryolipolyse (Bfreeze)", desc: "Élimination des amas graisseux localisés par le froid.", fullDesc: "Élimination des amas graisseux localisés par le froid avec la technologie Bfreeze.", img: "service_cryolipolysis.jpg" },
+                    { title: "Peau Lissée & Régénérée", tech: "Microneedling", desc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections.", fullDesc: "Stimulation du collagène, réduction des rides, cicatrices et imperfections par microneedling.", img: "service_microneedling.jpg" },
+                    { title: "Lifting Facial Naturel", tech: "Miracle Face (Renata Franca)", desc: "Massage du visage effet lifting immédiat et drainage lymphatique.", fullDesc: "Massage du visage effet lifting immédiat et drainage lymphatique selon la méthode Renata França.", img: "service_miracle_face.jpg", icon: "aesthetic" },
+                    {
+                        title: "Consultation médicale - Urologue", tech: "Dr. Nathalie Gagnon", desc: "Consultation spécialisée en urologie pour votre santé et bien-être.", fullDesc: `Je suis urologue. J'ai fait mon cours de médecine puis ma spécialité à l'université de Montréal pour graduer en 1993. J'ai travaillé comme urologue générale au Centre hospitalier du Grand Portage à Rivière-du-Loup pendant presque 32 ans. J'ai pris ma retraite de la pratique hospitalière en juillet 2025. 
+
+Mme Neves m'a approché pour que j'offre un service de consultation occasionnelle à sa clinique puisqu'elle notait des besoins chez plusieurs de ses clientes prises avec des problèmes d'incontinence et de plaintes urinaires diverses. Ces problèmes étant classés "non urgents" dans le système public cela entraine des délais importants avant de pouvoir rencontrer un (e) spécialiste en plus de nécessiter une demande d'un omnipraticien pour y avoir accès. On vous offre donc ici de court-circuiter un peu le système pour avoir réponse à vos questions et inquiétudes.`, img: "images/nathalie-gagnon-urologue.png", icon: "medical"
+                    },
+                    { title: "Soins Médico-Esthétiques Spécialisés", tech: "Simony Teixeira", desc: "Infirmière spécialisée en injection esthétique, mission de révéler votre beauté. Avec consultation médicale.", fullDesc: "Infirmière spécialisée en injection esthétique, a pour mission de révéler votre beauté et votre bien-être. Avec consultation médicale. Soins personnalisés avec Simony Teixeira.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Soins Médico-Esthétiques Spécialisés", tech: "Maria Carolina", desc: "Infirmière spécialisée en injection esthétique, mission de révéler votre beauté. Avec consultation médicale.", fullDesc: "Infirmière spécialisée en injection esthétique, a pour mission de révéler votre beauté et votre bien-être. Avec consultation médicale. Soins personnalisés avec Maria Carolina.", img: "partner_maria.png", icon: "nurse" }
                 ]
             },
             gallery: {
@@ -82,7 +85,7 @@ const CONFIG = {
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "La seule technologie combinant radiofréquence et ultrasons pour le raffermissement de la peau et le remodelage corporel.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "La référence absolue en épilation laser. Rapide, efficace et confortable pour tous les types de peau.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL X-Wave", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "machine_btl.jpg" }
+                    { title: "BTL Exilis", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "machine_btl.jpg" }
                 ]
             },
             reviews: {
@@ -127,12 +130,11 @@ const CONFIG = {
                 { label: "Reviews", anchor: "#reviews" },
                 { label: "Why Us", anchor: "#why-choose-us" },
                 { label: "About", anchor: "#bio" },
-                { label: "Partners", anchor: "#partners" },
                 { label: "Contact", anchor: "#contact" }
             ],
             more: "More",
-            tagline: "Massage therapy & aesthetic treatments in Quebec City.",
-            description: "A warm, modern clinic focused on real results, comfort, and professional care.",
+            tagline: "Brazilian massage therapy & aesthetic treatments in Quebec City.",
+            description: "Brazilian massage therapy, medical consultations with a urologist, and aesthetic treatments with nurses (Sculptra, Radiesse, Hyaluronic Acid, Botox). A clinic focused on real results and comfort.",
             cta: "Book an Appointment",
             partners: {
                 title: "Our Partners",
@@ -146,7 +148,7 @@ const CONFIG = {
                 title: "Owner & Certified Therapist",
                 description: "Passionate about well-being and aesthetics, Taíse Neves combines technical expertise and a human approach to offer high-quality personalized care. With years of experience in massage therapy and lymphatic drainage, she is committed to helping each client achieve their health and self-confidence goals.",
                 stats: [
-                    { label: "Years of Experience", value: "10+" },
+                    { label: "Years of Experience", value: "18+" },
                     { label: "Happy Clients", value: "5k+" },
                     { label: "Certifications", value: "12" }
                 ],
@@ -159,21 +161,25 @@ const CONFIG = {
                 details: "Details",
                 specialized: "Specialized care for your well-being and beauty.",
                 items: [
-                    { title: "Massage Therapy", tech: "Therapeutic & Myofascial Massage", desc: "Therapeutic, myofascial, relaxing massage and lymphatic drainage (Renata Franca, Goddoy, Leduc). Muscle relaxation and stress reduction for complete well-being.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Post-Op Care", tech: "Recovery & Healing", desc: "Specialized follow-up for plastic, bariatric, and facial surgery.", img: "service_post_op.jpg" },
-                    { title: "Kinesitherapy", tech: "Kinesiotaping", desc: "Pain relief, improved circulation, and muscle support.", img: "service_kinesio_new.jpg", icon: "recovery" },
-                    { title: "Medical Consultation - Urologist", tech: "Dr. Nathalie Gagnon", desc: "Specialized urological consultation for your health and well-being.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
-                    { title: "Aesthetic Injection Consultation", tech: "Simony Teixeira", desc: "Personalized medical-aesthetic care and injections to revive your natural beauty.", img: "partner_simony.png", icon: "nurse" },
-                    { title: "Specialized Medical-Aesthetic Care", tech: "Maria Carolina", desc: "Expertise in medical aesthetic treatments and skin regeneration for revitalized skin.", img: "partner_maria.png", icon: "nurse" },
-                    { title: "Skin Cleansing", tech: "Classic Skin Cleansing", desc: "Complete care for purified and radiant skin.", img: "service_skin_cleansing.jpg" },
-                    { title: "Rejuvenation & Clarity", tech: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation.", img: "service_sharplight.jpg" },
-                    { title: "Effective Tattoo Removal", tech: "Q-switched Laser", desc: "Effective and safe tattoo removal.", img: "service_tattoo_removal.jpg" },
-                    { title: "Instant Glow", tech: "Q-switched Laser (Peeling Holywood)", desc: "Reduce excess sebum, tighten pores, and unify skin tone.", img: "service_hollywood_peel.jpg" },
-                    { title: "Permanent Hair Removal", tech: "Sharplight & LightSheer", desc: "Sharplight and LightSheer technologies for lastingly smooth skin.", img: "service_hair_removal.jpg" },
-                    { title: "Firming & Body Contouring", tech: "Radiofrequency (Sharplight & Exilis)", desc: "Body and facial contouring, cellulite, and skin tightening (Sharplight and Exilis).", img: "service_rf_new.jpg" },
-                    { title: "Cold Body Sculpting", tech: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold.", img: "service_cryolipolysis.jpg" },
-                    { title: "Skin Regeneration", tech: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections.", img: "service_microneedling.jpg" },
-                    { title: "Natural Face Lifting", tech: "Miracle Face (Renata Franca)", desc: "Immediate lifting effect facial massage and lymphatic drainage.", img: "service_miracle_face.jpg", icon: "aesthetic" }
+                    { title: "Massage Therapy", tech: "Experience since 2007", desc: "Therapeutic massages and Brazilian lymphatic drainage (Renata França, Godoy).", fullDesc: "Therapeutic, myofascial, and relaxing massages (Swedish massage specialist). Relaxing massage following the Renata França®️ method. Certified in lymphatic drainage (7 certifications), including Renata França®️, Godoy®️, Leduc, and Vodder methods. Miracle Touch®️ facial massage (drainage and contouring). Complete relaxation and stress reduction.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Post-Op Care", tech: "Specialized Follow-up & Technologies", desc: "Specialized follow-up with advanced technologies for recovery without fibrosis.", fullDesc: "Personalized treatment including drainage, laser, LED, ultrasound, radiofrequency, and kinesiotape. Helps manage pain, modulates inflammation, reduces edema and bruising while decreasing the risk of fibrosis and necrosis for optimal recovery.", img: "service_post_op.jpg" },
+                    { title: "Kinesitherapy", tech: "Kinesiotaping", desc: "Kinesiotaping to reduce edema and support muscles without immobilization.", fullDesc: "Elastic bandage used for injury treatment and post-op care (e.g., liposuction). Reduces edema by lifting the skin, manages pain through neuromodulation, and supports muscles without immobilization. Prevents fibrosis and adhesions for harmonious healing.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Skin Cleansing", tech: "Deep Brazilian Method", desc: "Deep cleansing with complete manual extraction of blackheads.", fullDesc: "Meticulous protocol focused on complete manual extraction of blackheads. Essential step to purify the skin and maximize the effectiveness of subsequent technological treatments (lasers, injections). Includes bactericidal high frequency and soothing mask for a restored glow.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rejuvenation & Clarity", tech: "IPL (Sharplight)", desc: "Rosacea, telangiectasias, acne, folliculitis, imperfections, and rejuvenation.", fullDesc: "High-tech rejuvenation treatment for rosacea, telangiectasias, acne, and imperfections using Sharplight.", img: "service_sharplight.jpg" },
+                    { title: "Effective Tattoo Removal", tech: "Q-switched Laser", desc: "Effective and safe tattoo removal.", fullDesc: "Safe and effective tattoo removal using Q-switched Laser technology.", img: "service_tattoo_removal.jpg" },
+                    { title: "Instant Glow", tech: "Q-switched Laser (Peeling Holywood)", desc: "Reduce excess sebum, tighten pores, and unify skin tone.", fullDesc: "Treatment to reduce excess sebum, tighten pores, and even out skin tone (Hollywood Peel).", img: "service_hollywood_peel.jpg" },
+                    { title: "Permanent Hair Removal", tech: "Sharplight & LightSheer", desc: "Sharplight and LightSheer technologies for lastingly smooth skin.", fullDesc: "Permanent hair removal using premium Sharplight and LightSheer technologies.", img: "service_hair_removal.jpg" },
+                    { title: "Firming & Body Contouring", tech: "Radiofrequency (Sharplight & Exilis)", desc: "Cellulite treatment and body contouring for skin tightening.", fullDesc: "Body and facial contouring, cellulite treatment, and skin tightening using Sharplight and Exilis.", img: "service_rf_new.jpg" },
+                    { title: "Cold Body Sculpting", tech: "Cryolipolysis (Bfreeze)", desc: "Elimination of localized fat deposits by cold.", fullDesc: "Localized fat elimination through cold with Bfreeze technology.", img: "service_cryolipolysis.jpg" },
+                    { title: "Skin Regeneration", tech: "Microneedling", desc: "Collagen stimulation, reduction of wrinkles, scars, and imperfections.", fullDesc: "Microneedling for collagen stimulation and reduction of wrinkles, scars, and imperfections.", img: "service_microneedling.jpg" },
+                    { title: "Natural Face Lifting", tech: "Miracle Face (Renata Franca)", desc: "Immediate lifting effect facial massage and lymphatic drainage.", fullDesc: "Natural instant face lifting massage and lymphatic drainage following the Renata França method.", img: "service_miracle_face.jpg", icon: "aesthetic" },
+                    {
+                        title: "Medical Consultation - Urologist", tech: "Dr. Nathalie Gagnon", desc: "Specialized urological consultation for your health and well-being.", fullDesc: `I am a urologist. I completed my medical studies and specialization at the University of Montreal, graduating in 1993. I worked as a general urologist at the Centre hospitalier du Grand Portage in Rivière-du-Loup for nearly 32 years. I retired from hospital practice in July 2025.
+
+Ms. Neves approached me to offer occasional consultation services at her clinic because she noted needs among several of her clients dealing with incontinence and various urinary complaints. Since these problems are classified as "non-urgent" in the public system, it leads to significant delays before being able to meet a specialist, in addition to requiring a referral from a general practitioner. We offer you a way to bypass the system to get answers to your questions and concerns.`, img: "images/nathalie-gagnon-urologue.png", icon: "medical"
+                    },
+                    { title: "Specialized Medical-Aesthetic Care", tech: "Simony Teixeira", desc: "Nurse specialized in aesthetic injections, mission to reveal your beauty. With medical consultation.", fullDesc: "Nurse specialized in aesthetic injections, our mission is to reveal your beauty and well-being. Includes medical consultation. Personalized care with Simony Teixeira.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Specialized Medical-Aesthetic Care", tech: "Maria Carolina", desc: "Nurse specialized in aesthetic injections, mission to reveal your beauty. With medical consultation.", fullDesc: "Nurse specialized in aesthetic injections, our mission is to reveal your beauty and well-being. Includes medical consultation. Personalized care with Maria Carolina.", img: "partner_maria.png", icon: "nurse" }
                 ]
             },
             gallery: {
@@ -186,7 +192,7 @@ const CONFIG = {
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "The only technology combining radiofrequency and ultrasound for skin tightening and body contouring.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "The gold standard in laser hair removal. Fast, effective, and comfortable for all skin types.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL X-Wave", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "machine_btl.jpg" }
+                    { title: "BTL Exilis", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "machine_btl.jpg" }
                 ]
             },
             reviews: {
@@ -229,14 +235,13 @@ const CONFIG = {
                 { label: "Início", anchor: "#hero" },
                 { label: "Serviços", anchor: "#services" },
                 { label: "Avaliações", anchor: "#reviews" },
-                { label: "Por que Nós", anchor: "#why-choose-us" },
+                { label: "Por que nos escolher", anchor: "#why-choose-us" },
                 { label: "Sobre", anchor: "#bio" },
-                { label: "Parceiros", anchor: "#partners" },
                 { label: "Contato", anchor: "#contact" }
             ],
             more: "Mais",
-            tagline: "Massoterapia e tratamentos estéticos na cidade de Quebec.",
-            description: "Uma clínica acolhedora e moderna focada em resultados reais, conforto e atendimento profissional.",
+            tagline: "Massoterapia e tratamentos estéticos brasileiros na cidade de Quebec.",
+            description: "Massoterapia brasileira, consultas médicas com urologista e tratamentos estéticos com enfermeiras (Sculptra, Radiesse, Ácido Hialurônico, Botox). Uma clínica focada em resultados reais e conforto.",
             cta: "Agendar Consulta",
             partners: {
                 title: "Nossos Parceiros",
@@ -250,7 +255,7 @@ const CONFIG = {
                 title: "Proprietária e Terapeuta Certificada",
                 description: "Apaixonada por bem-estar e estética, Taíse Neves combina expertise técnica e abordagem humana para oferecer cuidados personalizados de alta qualidade. Com anos de experiência em massoterapia e drenagem linfática, ela se dedica a ajudar cada cliente a alcançar seus objetivos de saúde e autoconfiança.",
                 stats: [
-                    { label: "Anos de Experiência", value: "10+" },
+                    { label: "Anos de Experiência", value: "18+" },
                     { label: "Clientes Felizes", value: "5k+" },
                     { label: "Certificações", value: "12" }
                 ],
@@ -263,21 +268,25 @@ const CONFIG = {
                 details: "Detalhes",
                 specialized: "Cuidado especializado para seu bem-estar e beleza.",
                 items: [
-                    { title: "Massoterapia", tech: "Massagem Terapêutica & Miofascial", desc: "Massagem terapêutica, miofascial, relaxante e drenagem linfática (Renata Franca, Goddoy, Leduc). Relaxamento muscular e redução do estresse para um bem-estar completo.", img: "service_massage_myofascial.jpg", icon: "massage" },
-                    { title: "Pós-Op & Recuperação", tech: "Recuperação & Cicatrização", desc: "Acompanhamento especializado para cirurgia plástica, bariátrica e facial.", img: "service_post_op.jpg" },
-                    { title: "Kinesioterapia", tech: "Kinesiotaping", desc: "Alívio da dor, melhora da circulação e suporte muscular.", img: "service_kinesio_new.jpg", icon: "recovery" },
-                    { title: "Consulta Médica - Urologista", tech: "Dra. Nathalie Gagnon", desc: "Consulta especializada em urologia para sua saúde e bem-estar.", img: "images/nathalie-gagnon-urologue.png", icon: "medical" },
-                    { title: "Consulta de Injeções Estéticas", tech: "Simony Teixeira", desc: "Cuidados médico-estéticos e injeções personalizados para realçar sua beleza natural.", img: "partner_simony.png", icon: "nurse" },
-                    { title: "Cuidados Médico-Estéticos Especializados", tech: "Maria Carolina", desc: "Expertise em tratamentos estéticos médicos e regeneração para uma pele revitalizada.", img: "partner_maria.png", icon: "nurse" },
-                    { title: "Limpeza de Pele", tech: "Limpeza de Pele Clássica", desc: "Cuidado completo para uma pele purificada e radiante.", img: "service_skin_cleansing.jpg" },
-                    { title: "Rejuvenescimento & Claridade", tech: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento.", img: "service_sharplight.jpg" },
-                    { title: "Remoção de Tatuagem", tech: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura.", img: "service_tattoo_removal.jpg" },
-                    { title: "Brilho Instantâneo", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduza o excesso de sebo, feche os poros e unifique o tom da pele.", img: "service_hollywood_peel.jpg" },
-                    { title: "Depilação Permanente", tech: "Sharplight & LightSheer", desc: "Tecnologias Sharplight e LightSheer para pele macia duradoura.", img: "service_hair_removal.jpg" },
-                    { title: "Firmeza & Remodelagem", tech: "Radiofrequência (Sharplight & Exilis)", desc: "Remodelação corporal e facial, celulite e flacidez (Sharplight e Exilis).", img: "service_rf_new.jpg" },
-                    { title: "Escultura pelo Frio", tech: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio.", img: "service_cryolipolysis.jpg" },
-                    { title: "Regeneração da Pele", tech: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições.", img: "service_microneedling.jpg" },
-                    { title: "Lifting Facial Natural", tech: "Miracle Face (Renata Franca)", desc: "Massagem facial com efeito lifting imediato e drenagem linfática.", img: "service_miracle_face.jpg", icon: "aesthetic" }
+                    { title: "Massoterapia", tech: "Experiência desde 2007", desc: "Massagens terapêuticas e drenagem linfática brasileira (Renata França, Godoy).", fullDesc: "Massagens terapêuticas, miofasciais e relaxantes (especialista em massagem sueca). Massagem relaxante pelo método Renata França®️. Formação em drenagem linfática (7 formações), incluindo Renata França®️, Godoy®️, Leduc e Vodder. Massagem facial Miracle Touch®️ (drenagem e remodelagem). Relaxamento muscular e bem-estar completo.", img: "service_massage_myofascial.jpg", icon: "massage" },
+                    { title: "Pós-Op & Recuperação", tech: "Acompanhamento Especializado", desc: "Acompanhamento especializado com tecnologias avançadas para recuperação sem fibrose.", fullDesc: "Tratamento personalizado incluindo drenagem, laser, LED, ultrassom, radiofrequência e kinesiotaping. Melhora a dor, modula a inflamação, reduz o edema e hematomas, diminuindo o risco de fibrose e necrose para uma recuperação ideal.", img: "service_post_op.jpg" },
+                    { title: "Kinesioterapia", tech: "Kinesiotaping", desc: "Kinesiotaping para reduzir o edema e apoiar os músculos sem imobilização.", fullDesc: "Bandagem elástica usada no tratamento de lesões e pós-operatório (ex: lipoaspiração). Reduz o edema através do levantamento da pele, gerencia a dor por neuromodulação e apoia os músculos sem imobilizar. Previne a fibrose e aderências para uma cicatrização harmoniosa.", img: "service_kinesio_new.jpg", icon: "recovery" },
+                    { title: "Limpeza de Pele", tech: "Método Brasileiro Profundo", desc: "Limpeza profunda com extração manual completa de cravos.", fullDesc: "Protocolo minucioso focado na extração manual completa de cravos. Etapa essencial para purificar a pele e maximizar a eficácia de tratamentos tecnológicos posteriores (lasers, injeções). Inclui alta frequência bactericida e máscara calmante para um brilho restaurado.", img: "service_skin_cleansing.jpg" },
+                    { title: "Rejuvenescimento & Claridade", tech: "Luz Pulsada (Sharplight)", desc: "Rosácea, telangiectasias, acne, foliculite, imperfeições e rejuvenescimento.", fullDesc: "Tratamento de rejuvenescimento de alta tecnologia para rosácea, acne e imperfeições usando Sharplight.", img: "service_sharplight.jpg" },
+                    { title: "Remoção de Tatuagem", tech: "Laser Q-switched", desc: "Remoção de tatuagem eficaz e segura.", fullDesc: "Remoção de tatuagem segura e eficaz usando a tecnologia Laser Q-switched.", img: "service_tattoo_removal.jpg" },
+                    { title: "Brilho Instantâneo", tech: "Laser Q-switched (Peeling Holywood)", desc: "Reduza o excesso de sebo, feche os poros e unifique o tom da pele.", fullDesc: "Tratamento para reduzir o excesso de sebo, fechar os poros e uniformizar o tom da pele.", img: "service_hollywood_peel.jpg" },
+                    { title: "Depilação Permanente", tech: "Sharplight & LightSheer", desc: "Tecnologias Sharplight e LightSheer para pele macia duradoura.", fullDesc: "Depilação permanente usando tecnologias premium Sharplight e LightSheer.", img: "service_hair_removal.jpg" },
+                    { title: "Firmeza & Remodelagem", tech: "Radiofrequência (Sharplight & Exilis)", desc: "Tratamento de celulite e contorno corporal para flacidez cutânea.", fullDesc: "Contorno corporal e facial, tratamento de celulite e flacidez da pele usando Sharplight e Exilis.", img: "service_rf_new.jpg" },
+                    { title: "Escultura pelo Frio", tech: "Criolipólise (Bfreeze)", desc: "Eliminação de gordura localizada através do frio.", fullDesc: "Eliminação de gordura localizada através do frio com a tecnologia Bfreeze.", img: "service_cryolipolysis.jpg" },
+                    { title: "Regeneração da Pele", tech: "Microagulhamento", desc: "Estimulação de colágeno, redução de rugas, cicatrizes e imperfeições.", fullDesc: "Microagulhamento para stimulação de colágeno e redução de rugas e cicatrizes.", img: "service_microneedling.jpg" },
+                    { title: "Lifting Facial Natural", tech: "Miracle Face (Renata Franca)", desc: "Massagem facial com efeito lifting imediato e drenagem linfática.", fullDesc: "Massagem lifting facial natural e drenagem linfática seguindo o método Renata França.", img: "service_miracle_face.jpg", icon: "aesthetic" },
+                    {
+                        title: "Consulta Médica - Urologista", tech: "Dra. Nathalie Gagnon", desc: "Consulta especializada em urologia para sua saúde e bem-estar.", fullDesc: `Sou urologista. Fiz meu curso de medicina e minha especialização na Universidade de Montreal, graduando-me em 1993. Trabalhei como urologista geral no Centre hospitalier du Grand Portage em Rivière-du-Loup por quase 32 anos. Aposentei-me da prática hospitalar em julho de 2025.
+
+A Sra. Neves me abordou para oferecer um serviço de consulta ocasional em sua clínica, pois notou necessidades em várias de suas clientes com problemas de incontinência e queixas urinárias diversas. Sendo esses problemas classificados como "não urgentes" no sistema público, isso gera atrasos significativos antes de conseguir consultar um especialista, além de exigir um encaminhamento de um clínico geral. Oferecemos aqui uma oportunidade de agilizar o processo para obter respostas às suas perguntas e preocupações.`, img: "images/nathalie-gagnon-urologue.png", icon: "medical"
+                    },
+                    { title: "Cuidados Médico-Estéticos Especializados", tech: "Simony Teixeira", desc: "Enfermeira especializada em injetáveis, missão de revelar sua beleza. Com consulta médica.", fullDesc: "Enfermeira especializada em injeção estética, nossa missão é revelar sua beleza e bem-estar. Inclui consulta médica. Atendimento personalizado com Simony Teixeira.", img: "partner_simony.png", icon: "nurse" },
+                    { title: "Cuidados Médico-Estéticos Especializados", tech: "Maria Carolina", desc: "Enfermeira especializada em injetáveis, missão de revelar sua beleza. Com consulta médica.", fullDesc: "Enfermeira especializada em injeção estética, nossa missão é revelar sua beleza e bem-estar. Inclui consulta médica. Atendimento personalizado com Maria Carolina.", img: "partner_maria.png", icon: "nurse" }
                 ]
             },
             gallery: {
@@ -290,7 +299,7 @@ const CONFIG = {
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "A única tecnologia combinando radiofrequência e ultrassom para firmeza da pele e contorno corporal.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "O padrão ouro em depilação a laser. Rápido, eficaz e confortável para todos os tipos de pele.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL X-Wave", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "machine_btl.jpg" }
+                    { title: "BTL Exilis", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "machine_btl.jpg" }
                 ]
             },
             reviews: {
@@ -426,6 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderUI();
     initScrollEffects();
     initForm();
+    initServiceModal();
 });
 
 function setLanguage(lang) {
@@ -446,13 +456,10 @@ function renderUI() {
     renderGallery();
     renderWhyChooseUs();
     renderBio();
-    renderPartners();
+    // Partners are now integrated into services at the end
     renderContactForm();
     renderContactInfo();
     renderFooter();
-
-    renderFooter();
-    // renderMobileBottomBar(); // Removed dynamic rendering
 
     // Re-init mobile menu content
     updateMobileMenuContent();
@@ -580,7 +587,9 @@ function renderServices() {
         const iconName = s.icon || icons[idx % icons.length];
         const imagePath = s.img || CONFIG.images.services[idx % CONFIG.images.services.length];
         return `
-                        <div class="service-card">
+                        <div class="service-card" 
+                             onclick="openServiceModal(${idx})"
+                             style="cursor: pointer;">
                             <div class="service-card-image">
                                 <img src="${imagePath}" alt="${s.title}">
                             </div>
@@ -588,6 +597,9 @@ function renderServices() {
                                 <h3>${s.title}</h3>
                                 <p>${s.desc}</p>
                                 <div class="service-tech-label">${s.tech}</div>
+                                <div class="read-more-btn" style="margin-top: 15px; color: var(--clr-accent); font-weight: 600; font-size: 0.9rem;">
+                                    ${currentLang === 'fr' ? 'Détails' : (currentLang === 'pt' ? 'Detalhes' : 'Details')} &rarr;
+                                </div>
                             </div>
                         </div>
                     `;
@@ -597,6 +609,66 @@ function renderServices() {
     `;
     root.appendChild(section);
 }
+
+function openServiceModal(index) {
+    const t = CONFIG.translations[currentLang];
+    const s = t.services.items[index];
+    if (!s) return;
+
+    // Determine image path (same logic as renderServices)
+    const imagePath = s.img || CONFIG.images.services[index % CONFIG.images.services.length];
+
+    const modal = document.getElementById('service-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTech = document.getElementById('modal-tech');
+    const modalImage = document.getElementById('modal-image');
+    const modalDesc = document.getElementById('modal-description');
+    const modalContactBtn = document.getElementById('modal-contact-btn');
+
+    modalTitle.textContent = s.title;
+    modalTech.textContent = s.tech;
+    modalImage.src = imagePath;
+    modalDesc.innerHTML = (s.fullDesc || s.desc).replace(/\n/g, '<br>');
+
+    // Update contact button text based on language
+    modalContactBtn.textContent = currentLang === 'fr' ? 'Contact' : (currentLang === 'pt' ? 'Contato' : 'Contact');
+    modalContactBtn.onclick = () => {
+        closeServiceModal();
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('service-modal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function initServiceModal() {
+    const modal = document.getElementById('service-modal');
+    const closeBtn = document.querySelector('.close-modal');
+
+    if (closeBtn) {
+        closeBtn.onclick = closeServiceModal;
+    }
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            closeServiceModal();
+        }
+    };
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeServiceModal();
+        }
+    });
+}
+
 
 function renderTechnologies() {
     const root = document.getElementById('content-root');
