@@ -186,6 +186,18 @@ h3 {
     box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
 }
 
+.btn-facebook {
+    background: #1877F2;
+    color: var(--clr-white);
+}
+
+.btn-facebook:hover {
+    background: #166FE5;
+    color: var(--clr-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
 .btn-whatsapp {
     background: #25D366;
     color: var(--clr-white);
@@ -1197,6 +1209,47 @@ h3 {
     font-size: 1.05rem;
     line-height: 1.8;
     color: var(--clr-text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.profile-bio-text:last-child {
+    margin-bottom: 0;
+}
+
+.bio-text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-extra-content {
+    /* Initial state handled by JS (display: none), but we can add animation */
+    animation: bioFadeIn 0.5s ease-out;
+}
+
+@keyframes bioFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bio-toggle-btn {
+    align-self: flex-start;
+    background: transparent;
+    border: none;
+    color: var(--clr-accent);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+    font-family: var(--ff-heading);
+    letter-spacing: 0.05em;
+}
+
+.bio-toggle-btn:hover {
+    color: #b08e4d;
+    border-bottom-color: var(--clr-accent-light);
 }
 
 /* Stats Cards Grid */
@@ -2064,7 +2117,7 @@ h3 {
     grid-template-columns: 1fr 1.2fr;
     gap: 0;
     height: 100%;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .modal-image-container {
@@ -2083,16 +2136,17 @@ h3 {
     padding: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background: #fff;
+    height: 100%;
+    overflow: hidden;
 }
 
 #modal-title {
     font-family: var(--ff-heading);
-    font-size: 3rem;
+    font-size: 2.25rem;
     color: #4a3e31;
-    margin-bottom: 8px;
-    line-height: 1.1;
+    margin-bottom: 4px;
+    line-height: 1.2;
 }
 
 .modal-tech-badge {
@@ -2106,11 +2160,14 @@ h3 {
 }
 
 .modal-description-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.7;
     color: #555;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     white-space: pre-wrap;
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 15px;
 }
 
 .modal-cta {
