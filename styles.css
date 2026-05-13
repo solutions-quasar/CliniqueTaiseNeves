@@ -626,25 +626,28 @@ h3 {
     }
 
     .hero-text {
-        background: rgba(45, 41, 38, 0.9);
-        backdrop-filter: blur(10px);
-        padding: 1.5rem;
-        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 2.5rem 2rem;
+        border-radius: var(--radius-lg);
         max-width: 500px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
     .hero-text h1 {
-        color: var(--clr-white);
-        font-size: 2rem;
+        color: var(--clr-accent);
+        font-size: 2.25rem;
         margin-bottom: 1rem;
+        line-height: 1.2;
     }
 
     .hero-text p {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1rem;
-        margin-bottom: 2rem;
+        color: var(--clr-text-muted);
+        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
     }
 
     .hero-overlay-mobile {
