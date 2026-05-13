@@ -1984,11 +1984,11 @@ h3 {
 }
 
 .mobile-menu-content {
-    padding: clamp(1rem, 2.5vh, 2rem) 2rem 60px 2rem;
+    padding: clamp(4rem, 10vh, 6rem) 2rem 60px 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     overflow-y: auto;
