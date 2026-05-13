@@ -1117,6 +1117,8 @@ function updateMobileMenuContent() {
     const footer = document.getElementById('mobile-menu-footer');
     const menu = document.getElementById('mobile-menu');
 
+    const t = CONFIG.translations[currentLang];
+
     // Populate links
     navLinks.innerHTML = t.nav.map(n => {
         if (n.anchor === '#contact') {
