@@ -523,7 +523,24 @@ function renderTopBar() {
             </div>
         </div>
     `;
+
+    // Lang dropdown toggle logic
+    const langDropdown = header.querySelector('.lang-dropdown');
+    const langBtn = header.querySelector('.lang-btn-current');
+    if (langBtn && langDropdown) {
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langDropdown.classList.toggle('active');
+        });
+    }
 }
+
+// Global click to close dropdowns
+document.addEventListener('click', () => {
+    const langDropdown = document.querySelector('.lang-dropdown');
+    if (langDropdown) langDropdown.classList.remove('active');
+});
+
 
 function renderHero() {
     const root = document.getElementById('content-root');
