@@ -131,7 +131,7 @@ h3 {
     padding: 1rem 2rem;
     border-radius: 100px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border: none;
     transition: var(--transition);
@@ -603,6 +603,17 @@ h3 {
     line-height: 1.1;
     letter-spacing: -0.03em;
 }
+
+.hero-actions {
+    margin-top: 2rem;
+}
+
+.hero-actions .btn {
+    padding: 1.2rem 2.8rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 
 .hero-text p {
     margin-bottom: 3rem;
@@ -1693,8 +1704,9 @@ h3 {
     gap: 0.5rem;
     background: #25D366;
     color: white;
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 1rem 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     margin-top: 1.5rem;
     border: none;
 }
@@ -2036,11 +2048,13 @@ h3 {
 }
 
 .mobile-nav-whatsapp {
-    margin-top: 1rem;
-    padding: 1rem 2rem;
+    margin: 1.5rem auto 0;
+    padding: 0.8rem 1.5rem;
     border-radius: 50px;
-    font-weight: 600;
-    width: 100%;
+    font-weight: 700;
+    font-size: 1.15rem;
+    width: auto;
+    min-width: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
