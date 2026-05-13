@@ -25,7 +25,7 @@ const CONFIG = {
                 { label: "Avis", anchor: "#reviews" },
                 { label: "Pourquoi Nous", anchor: "#why-choose-us" },
                 { label: "À Propos", anchor: "#bio" },
-                { label: "WhatsApp", anchor: "#contact" }
+                { label: "Contact", anchor: "#contact" }
             ],
             more: "Plus",
             tagline: "Massothérapie et soins esthétiques brésiliens à Québec.",
@@ -1118,10 +1118,10 @@ function updateMobileMenuContent() {
     const menu = document.getElementById('mobile-menu');
 
     // Populate links
-    navLinks.innerHTML = CONFIG.translations[currentLang].nav.map(n => {
-        if (n.label === 'WhatsApp' || n.anchor === '#contact') {
+    navLinks.innerHTML = t.nav.map(n => {
+        if (n.anchor === '#contact') {
             return `<a href="https://wa.me/${CONFIG.business.phoneRaw.replace('+', '')}" target="_blank" class="btn btn-whatsapp mobile-nav-whatsapp">
-                        ${ICONS.whatsapp} ${n.label}
+                        ${ICONS.whatsapp} ${t.cta}
                     </a>`;
         }
         return `<a href="${n.anchor}" class="mobile-nav-item">${n.label}</a>`;
