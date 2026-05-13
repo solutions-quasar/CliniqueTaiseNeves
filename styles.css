@@ -683,16 +683,17 @@ h3 {
 
 .service-card-image {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     background: #fdfaf7;
 }
 
 .service-card-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: initial;
+    object-fit: cover;
+    object-position: top;
     transition: transform 0.5s ease;
 }
 
@@ -819,16 +820,17 @@ h3 {
 
 .tech-image {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     background: #fdfaf7;
 }
 
 .tech-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: initial;
+    object-fit: cover;
+    object-position: top;
     transition: transform 0.5s ease;
 }
 
@@ -1464,16 +1466,17 @@ h3 {
 
 .partner-image {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     background: #fdfaf7;
 }
 
 .partner-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    object-fit: initial;
+    object-fit: cover;
+    object-position: top;
 }
 
 .partner-content {
@@ -1492,8 +1495,9 @@ h3 {
         max-width: 450px;
     }
 
+    /* Redundant now but kept for specificity if needed */
     .service-card-image {
-        aspect-ratio: 4/5;
+        aspect-ratio: 4 / 5;
     }
 }
 
