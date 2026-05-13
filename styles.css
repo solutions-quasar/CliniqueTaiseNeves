@@ -585,10 +585,12 @@ h3 {
 
 @media (max-width: 991px) {
     .hero {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-top: 80px;
-        height: 70vh;
-        min-height: 600px;
+        min-height: 100vh;
+        position: relative;
     }
 
     .hero-wrapper {
@@ -615,20 +617,18 @@ h3 {
     }
 
     .hero-content {
-        position: absolute;
-        bottom: 10%;
-        left: 5%;
-        width: 90%;
-        padding: 0;
+        position: relative;
+        width: 100%;
+        padding: 2rem 5%;
         display: flex;
         justify-content: flex-start;
+        z-index: 10;
     }
 
     .hero-text {
-        background: rgba(45, 41, 38, 0.85);
-        /* Darker container */
+        background: rgba(45, 41, 38, 0.9);
         backdrop-filter: blur(10px);
-        padding: 2.5rem;
+        padding: 1.5rem;
         border-radius: var(--radius-md);
         max-width: 500px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
