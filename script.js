@@ -30,7 +30,7 @@ const CONFIG = {
             more: "Plus",
             tagline: "Massothérapie et soins esthétiques brésiliens à Québec.",
             description: "Massothérapie brésilienne, consultations médicales avec urologue et traitements esthétiques avec infirmières (Sculptra, Radiesse, Acide Hyaluronique, Botox). Une clinique axée sur des résultats concrets et le confort.",
-            cta: "Prendre rendez-vous",
+            cta: "Réserver sur WhatsApp",
             partners: {
                 title: "Nos Partenaires",
                 items: [
@@ -109,7 +109,7 @@ Mme Neves m'a approché pour que j'offre un service de consultation occasionnell
             contact: {
                 title: "WhatsApp",
                 subtitle: "Réservez votre séance ou posez vos questions directement via WhatsApp.",
-                whatsappCTA: "Discuter sur WhatsApp",
+                whatsappCTA: "Réserver sur WhatsApp",
                 name: "Nom complet",
                 info: "Téléphone ou Email",
                 type: "Type de traitement",
@@ -140,7 +140,7 @@ Mme Neves m'a approché pour que j'offre un service de consultation occasionnell
             more: "More",
             tagline: "Brazilian massage therapy & aesthetic treatments in Quebec City.",
             description: "Brazilian massage therapy, medical consultations with a urologist, and aesthetic treatments with nurses (Sculptra, Radiesse, Hyaluronic Acid, Botox). A clinic focused on real results and comfort.",
-            cta: "Book via WhatsApp",
+            cta: "Book on WhatsApp",
             partners: {
                 title: "Our Partners",
                 items: [
@@ -219,7 +219,7 @@ Ms. Neves approached me to offer occasional consultation services at her clinic 
             contact: {
                 title: "WhatsApp",
                 subtitle: "Book your session or ask your questions directly via WhatsApp.",
-                whatsappCTA: "Chat on WhatsApp",
+                whatsappCTA: "Book on WhatsApp",
                 name: "Full Name",
                 info: "Phone or Email",
                 type: "Treatment Type",
@@ -250,7 +250,7 @@ Ms. Neves approached me to offer occasional consultation services at her clinic 
             more: "Mais",
             tagline: "Massoterapia e tratamentos estéticos brasileiros na cidade de Quebec.",
             description: "Massoterapia brasileira, consultas médicas com urologista e tratamentos estéticos com enfermeiras (Sculptra, Radiesse, Ácido Hialurônico, Botox). Uma clínica focada em resultados reais e conforto.",
-            cta: "Agendar via WhatsApp",
+            cta: "Reservar no WhatsApp",
             partners: {
                 title: "Nossos Parceiros",
                 items: [
@@ -329,7 +329,7 @@ A Sra. Neves me abordou para oferecer um serviço de consulta ocasional em sua c
             contact: {
                 title: "WhatsApp",
                 subtitle: "Reserve sua sessão ou tire suas dúvidas diretamente pelo WhatsApp.",
-                whatsappCTA: "Conversar no WhatsApp",
+                whatsappCTA: "Reservar no WhatsApp",
                 name: "Nome Completo",
                 info: "Telefone ou E-mail",
                 type: "Tipo de Tratamento",
@@ -555,7 +555,7 @@ function renderHero() {
                     <h1>${t.tagline}</h1>
                     <p class="subheadline">${t.description}</p>
                     <div class="hero-actions">
-                        <a href="https://wa.me/14182617237" target="_blank" class="btn btn-primary">
+                        <a href="https://wa.me/14182617237" target="_blank" class="btn btn-whatsapp">
                             <span class="btn-icon">${ICONS.whatsapp}</span>
                             ${t.cta}
                         </a>
@@ -935,8 +935,8 @@ function renderContactForm() {
                     </div>
                     <h2>${t.contact.title}</h2>
                     <p>${t.contact.subtitle}</p>
-                    <a href="https://wa.me/14182617237" target="_blank" class="btn btn-primary btn-whatsapp-large">
-                        ${t.contact.whatsappCTA}
+                    <a href="https://wa.me/14182617237" target="_blank" class="btn btn-whatsapp-large">
+                        ${ICONS.whatsapp} ${t.contact.whatsappCTA}
                     </a>
                 </div>
             </div>
@@ -1118,7 +1118,14 @@ function updateMobileMenuContent() {
     const menu = document.getElementById('mobile-menu');
 
     // Populate links
-    navLinks.innerHTML = CONFIG.translations[currentLang].nav.map(n => `<a href="${n.anchor}" class="mobile-nav-item">${n.label}</a>`).join('');
+    navLinks.innerHTML = CONFIG.translations[currentLang].nav.map(n => {
+        if (n.label === 'WhatsApp' || n.anchor === '#contact') {
+            return `<a href="https://wa.me/${CONFIG.business.phoneRaw.replace('+', '')}" target="_blank" class="btn btn-whatsapp mobile-nav-whatsapp">
+                        ${ICONS.whatsapp} ${n.label}
+                    </a>`;
+        }
+        return `<a href="${n.anchor}" class="mobile-nav-item">${n.label}</a>`;
+    }).join('');
 
     // Populate footer
     footer.innerHTML = `

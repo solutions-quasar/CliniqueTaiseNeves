@@ -227,14 +227,39 @@ h3 {
 
 .btn-whatsapp {
     background: #25D366;
-    color: var(--clr-white);
+    color: white;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+    position: relative;
+    overflow: hidden;
 }
+
+.btn-whatsapp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: all 0.6s;
+    animation: ctaShimmer 5s infinite;
+}
+
+
+
+
+
 
 .btn-whatsapp:hover {
     background: #128C7E;
     color: var(--clr-white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
 /* --- Top Bar (Desktop) --- */
@@ -1281,10 +1306,10 @@ h3 {
 
 @media (max-width: 576px) {
     .logo img {
-        height: 65px; /* ~18% reduction from 80px, looks better on small screens */
+        height: 60px;
     }
     .phone-link {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -1679,6 +1704,11 @@ h3 {
     transform: scale(1.05);
 }
 
+.btn-whatsapp-large svg {
+    width: 24px;
+    height: 24px;
+}
+
 @media (max-width: 768px) {
     .form-card {
         padding: 2.5rem 1.5rem;
@@ -1984,7 +2014,7 @@ h3 {
 }
 
 .mobile-menu-content {
-    padding: clamp(4rem, 10vh, 6rem) 2rem 60px 2rem;
+    padding: clamp(2rem, 5vh, 3rem) 2rem 60px 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -2000,9 +2030,35 @@ h3 {
 .mobile-nav-links {
     display: flex;
     flex-direction: column;
-    gap: clamp(1rem, 2.5vh, 2rem);
+    gap: 1.5rem;
+    width: 100%;
     text-align: center;
 }
+
+.mobile-nav-whatsapp {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.mobile-nav-whatsapp svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+
+
+
+
 
 .mobile-nav-item {
     font-size: clamp(1.5rem, 3.5vh, 2rem);
