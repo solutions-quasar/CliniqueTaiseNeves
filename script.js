@@ -555,7 +555,7 @@ function renderHero() {
                     <h1>${t.tagline}</h1>
                     <p class="subheadline">${t.description}</p>
                     <div class="hero-actions">
-                        <a href="https://wa.me/14182617237" target="_blank" class="btn btn-whatsapp">
+                        <a href="https://wa.me/14182617237" target="_blank" class="btn btn-primary">
                             <span class="btn-icon">${ICONS.whatsapp}</span>
                             ${t.cta}
                         </a>
