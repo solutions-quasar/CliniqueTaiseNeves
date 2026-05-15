@@ -10,6 +10,7 @@ const CONFIG = {
         instagram: "https://www.instagram.com/cliniquetaiseneves/?hl=en",
         facebook: "https://www.facebook.com/taise.neves.872190",
         googleMapsDir: "https://www.google.com/maps/dir/?api=1&destination=205%20Montmagny%20St%2C%20Qu%C3%A9bec%20City%2C%20QC%20G1N%204V3",
+        googleReviews: "https://www.google.com/search?q=Clinique+Ta%C3%ADse+Neves+Reviews#lrd=0x4cb897e39e3d0e81:0xd884c0bc852440ca,1,,,,",
         hours: [
             { day: "Lundi - Jeudi", time: "13:00 - 19:00" },
             { day: "Vendredi", time: "09:00 - 19:00" },
@@ -89,7 +90,7 @@ Mme Neves m'a approché pour que j'offre un service de consultation occasionnell
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "La seule technologie combinant radiofréquence et ultrasons pour le raffermissement de la peau et le remodelage corporel.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "La référence absolue en épilation laser. Rapide, efficace et confortable pour tous les types de peau.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "machine_btl.jpg" }
+                    { title: "BTL CELLUtone", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
@@ -199,7 +200,7 @@ Ms. Neves approached me to offer occasional consultation services at her clinic 
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "The only technology combining radiofrequency and ultrasound for skin tightening and body contouring.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "The gold standard in laser hair removal. Fast, effective, and comfortable for all skin types.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "machine_btl.jpg" }
+                    { title: "BTL CELLUtone", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
@@ -309,7 +310,7 @@ A Sra. Neves me abordou para oferecer um serviço de consulta ocasional em sua c
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "A única tecnologia combinando radiofrequência e ultrassom para firmeza da pele e contorno corporal.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "O padrão ouro em depilação a laser. Rápido, eficaz e confortável para todos os tipos de pele.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "machine_btl.jpg" }
+                    { title: "BTL CELLUtone", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
@@ -368,7 +369,7 @@ A Sra. Neves me abordou para oferecer um serviço de consulta ocasional em sua c
         bio: "taise_bio_new_v2.jpg",
         footerSignature: "logo_clinique.png",
         reviewsBanner: "reviews_full.jpg",
-        machines: ["taise_machines.jpg", "machine_lightsheer.jpg", "machine_btl.jpg"],
+        machines: ["taise_machines.jpg", "machine_lightsheer.jpg", "CELLUtone.jpg"],
         gallery: [
             "gallery_01.jpg",
             "gallery_02.jpg",
@@ -765,7 +766,7 @@ function renderReviews() {
                 `).join('')}
             </div>
             <div class="reviews-footer">
-                <a href="${CONFIG.business.instagram}" target="_blank" class="text-link">${t.reviews.more}</a>
+                <a href="${CONFIG.business.googleReviews}" target="_blank" class="text-link">${t.reviews.more}</a>
             </div>
         </div>
     `;
