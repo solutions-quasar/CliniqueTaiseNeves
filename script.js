@@ -90,7 +90,7 @@ Mme Neves m'a approché pour que j'offre un service de consultation occasionnell
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "La seule technologie combinant radiofréquence et ultrasons pour le raffermissement de la peau et le remodelage corporel.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "La référence absolue en épilation laser. Rapide, efficace et confortable pour tous les types de peau.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "CELLUtone.jpg" }
+                    { title: "BTL Cellutone", desc: "Thérapie par ondes acoustiques pour traiter la cellulite et améliorer la texture de la peau.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
@@ -200,7 +200,7 @@ Ms. Neves approached me to offer occasional consultation services at her clinic 
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "The only technology combining radiofrequency and ultrasound for skin tightening and body contouring.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "The gold standard in laser hair removal. Fast, effective, and comfortable for all skin types.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "CELLUtone.jpg" }
+                    { title: "BTL Cellutone", desc: "Acoustic wave therapy to treat cellulite and improve skin texture.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
@@ -310,7 +310,7 @@ A Sra. Neves me abordou para oferecer um serviço de consulta ocasional em sua c
                 items: [
                     { title: "BTL Exilis Ultra 360", desc: "A única tecnologia combinando radiofrequência e ultrassom para firmeza da pele e contorno corporal.", img: "taise_machines.jpg" },
                     { title: "Lumenis LightSheer Desire", desc: "O padrão ouro em depilação a laser. Rápido, eficaz e confortável para todos os tipos de pele.", img: "machine_lightsheer.jpg" },
-                    { title: "BTL CELLUtone", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "CELLUtone.jpg" }
+                    { title: "BTL Cellutone", desc: "Terapia por ondas acústicas para tratar celulite e melhorar a textura da pele.", img: "CELLUtone.jpg" }
                 ]
             },
             reviews: {
